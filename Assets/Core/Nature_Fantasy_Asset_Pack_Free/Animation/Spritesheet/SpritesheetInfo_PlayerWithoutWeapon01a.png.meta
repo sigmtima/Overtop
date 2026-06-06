@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: a40e09e4f98e39f4a8367b3de8366d27
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1125438204934412243
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_0
+  - first:
+      213: -3523346245153764042
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_1
+  - first:
+      213: 6780858558439422165
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_2
+  - first:
+      213: 5943910405970743082
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_3
+  - first:
+      213: 1343363446634312830
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_4
+  - first:
+      213: -7728426063583216947
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_5
+  - first:
+      213: -2723310887969941995
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_6
+  - first:
+      213: -203844314363345436
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_7
+  - first:
+      213: -5678860593756656851
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_8
+  - first:
+      213: 5646505413648065523
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_9
+  - first:
+      213: -6403461342235955858
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_10
+  - first:
+      213: 195551125523824993
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_11
+  - first:
+      213: -4781912319869966121
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_12
+  - first:
+      213: -2773338131549811213
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_13
+  - first:
+      213: 2776658363606575714
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_14
+  - first:
+      213: -5552347983137611330
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_15
+  - first:
+      213: -5231596745038408929
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_16
+  - first:
+      213: -36425641534294010
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_17
+  - first:
+      213: -543096452279296087
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_18
+  - first:
+      213: -171561304835731733
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_19
+  - first:
+      213: 3046557412188566783
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_20
+  - first:
+      213: -6376112951711948729
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_21
+  - first:
+      213: -2463499187577089689
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_22
+  - first:
+      213: -5533484106093551296
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_23
+  - first:
+      213: -423383423239321304
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_24
+  - first:
+      213: 2039238231056137748
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_25
+  - first:
+      213: -136974800522505110
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_26
+  - first:
+      213: -1616513041607148452
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_27
+  - first:
+      213: 2760512926289553441
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_28
+  - first:
+      213: -4373581411964461199
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_29
+  - first:
+      213: -8237612742869861886
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_30
+  - first:
+      213: 2437557290187720371
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_31
+  - first:
+      213: 7001741066805827050
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_32
+  - first:
+      213: 4417994955547713806
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_33
+  - first:
+      213: 4095089048703475559
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_34
+  - first:
+      213: -5152478046687985618
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_35
+  - first:
+      213: -9022717972606420922
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_36
+  - first:
+      213: 4347880029737761851
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_37
+  - first:
+      213: -7152629371464913041
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_38
+  - first:
+      213: 269202883532356316
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_39
+  - first:
+      213: -2987429142844480888
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_40
+  - first:
+      213: -1206279300793011258
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_41
+  - first:
+      213: 8475446823885137287
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_42
+  - first:
+      213: -5908429772729992955
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_43
+  - first:
+      213: 1444690648629560912
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_44
+  - first:
+      213: 8771224591512049862
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_45
+  - first:
+      213: -5350109088128496323
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_46
+  - first:
+      213: 676063961693835235
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_47
+  - first:
+      213: -7201422312273503490
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_48
+  - first:
+      213: -6864939423780647469
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_49
+  - first:
+      213: 4418877963091452465
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_50
+  - first:
+      213: 4790883282155862121
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_51
+  - first:
+      213: -3424599543783842096
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_52
+  - first:
+      213: -4203576331632150858
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_53
+  - first:
+      213: 6791519170055075740
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_54
+  - first:
+      213: 6325382320857397400
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_55
+  - first:
+      213: -4411528853374093519
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_56
+  - first:
+      213: -7760769399344735262
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_57
+  - first:
+      213: -1842604142641093143
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_58
+  - first:
+      213: -6381590839784326223
+    second: SpritesheetInfo_PlayerWithoutWeapon01a_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 241
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7d4c5a51c5e9f00800000000000000
+      internalID: 1125438204934412243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 244
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d47ece14f8a1fc0800000000000000
+      internalID: -3523346245153764042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 244
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8f2ffaee27a1e50800000000000000
+      internalID: 6780858558439422165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_3
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 243
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f42a4a5030d7250800000000000000
+      internalID: 5943910405970743082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 244
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74f1e0ffe594a210800000000000000
+      internalID: 1343363446634312830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_5
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 244
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca704f217d1fb490800000000000000
+      internalID: -7728426063583216947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_6
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 242
+        width: 118
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51619951d2bd43ad0800000000000000
+      internalID: -2723310887969941995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_7
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 244
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5c3e41daccb2df0800000000000000
+      internalID: -203844314363345436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_8
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 244
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2bab2cb062a031b0800000000000000
+      internalID: -5678860593756656851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 190
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f320dad1ca6c5e40800000000000000
+      internalID: 5646505413648065523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_10
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 207
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d641316d55227a0800000000000000
+      internalID: -6403461342235955858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 207
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161864c66bcb6b200800000000000000
+      internalID: 195551125523824993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_12
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 207
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8261ba41c33adb0800000000000000
+      internalID: -4781912319869966121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_13
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 212
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd8de2c9af1389d0800000000000000
+      internalID: -2773338131549811213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_14
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 212
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a2361021ca88620800000000000000
+      internalID: 2776658363606575714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 159
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1e9bb4de812f2b0800000000000000
+      internalID: -5552347983137611330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_16
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 159
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1355e38a72a567b0800000000000000
+      internalID: -5231596745038408929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_17
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 159
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608f1af62179e7ff0800000000000000
+      internalID: -36425641534294010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_18
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 159
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af1e1377a88678f0800000000000000
+      internalID: -543096452279296087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_19
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 159
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee4018f6ed7e9df0800000000000000
+      internalID: -171561304835731733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_20
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 159
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4355533db874a20800000000000000
+      internalID: 3046557412188566783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_21
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 164
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74021717d0f7387a0800000000000000
+      internalID: -6376112951711948729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 164
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76111048a84efcdd0800000000000000
+      internalID: -2463499187577089689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_23
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 164
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041260ee58d1533b0800000000000000
+      internalID: -5533484106093551296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_24
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 111
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829080e0507df1af0800000000000000
+      internalID: -423383423239321304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_25
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 111
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e3f76ed54dc4c10800000000000000
+      internalID: 2039238231056137748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_26
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 111
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a641da7052e591ef0800000000000000
+      internalID: -136974800522505110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_27
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 111
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c383c04fdf099e0800000000000000
+      internalID: -1616513041607148452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_28
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 111
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128ec5171ef4f4620800000000000000
+      internalID: 2760512926289553441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_29
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 111
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f5b97c0eaed43c0800000000000000
+      internalID: -4373581411964461199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_30
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 117
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ab208eade1ead80800000000000000
+      internalID: -8237612742869861886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_31
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 117
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b68d41d071f3d120800000000000000
+      internalID: 2437557290187720371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_32
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 117
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5d938476e2b2160800000000000000
+      internalID: 7001741066805827050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_33
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 117
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01a3e8210fdf4d30800000000000000
+      internalID: 4417994955547713806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_34
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 117
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f10970bcda4d830800000000000000
+      internalID: 4095089048703475559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_35
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 117
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e200a2af388be78b0800000000000000
+      internalID: -5152478046687985618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_36
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 117
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648f24eeecdd8c280800000000000000
+      internalID: -9022717972606420922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_37
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 117
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3cb88ad9d5c65c30800000000000000
+      internalID: 4347880029737761851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_38
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 117
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6feecf9b71ccbc90800000000000000
+      internalID: -7152629371464913041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_39
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 117
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdaf475a8966cb300800000000000000
+      internalID: 269202883532356316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_40
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 117
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882ea1dc5058a86d0800000000000000
+      internalID: -2987429142844480888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_41
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 117
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c37358fd5f624fe0800000000000000
+      internalID: -1206279300793011258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_42
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 63
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785e2624bf5de9570800000000000000
+      internalID: 8475446823885137287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_43
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 63
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50936180d6a010ea0800000000000000
+      internalID: -5908429772729992955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 63
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056c4e99d729c0410800000000000000
+      internalID: 1444690648629560912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_45
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 63
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c81f364b46a9b970800000000000000
+      internalID: 8771224591512049862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_46
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 69
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d0384612890c5b0800000000000000
+      internalID: -5350109088128496323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_47
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 69
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef443a579cd16900800000000000000
+      internalID: 676063961693835235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 15
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa9d5fcf886f0c90800000000000000
+      internalID: -7201422312273503490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_49
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 15
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddcaf057f5dab0a0800000000000000
+      internalID: -6864939423780647469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_50
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 15
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1322edf5812035d30800000000000000
+      internalID: 4418877963091452465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_51
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 15
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968f14146f2ac7240800000000000000
+      internalID: 4790883282155862121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_52
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 15
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de9cc6fbd06970d0800000000000000
+      internalID: -3424599543783842096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_53
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 15
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b673de0995e9a5c0800000000000000
+      internalID: -4203576331632150858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_54
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 15
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c977360c3b2504e50800000000000000
+      internalID: 6791519170055075740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_55
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 20
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 898bd3f15b548c750800000000000000
+      internalID: 6325382320857397400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_56
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 20
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137304291e917c2c0800000000000000
+      internalID: -4411528853374093519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_57
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 20
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ebd55089553c4490800000000000000
+      internalID: -7760769399344735262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_58
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 20
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5e6387b41cd66e0800000000000000
+      internalID: -1842604142641093143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetInfo_PlayerWithoutWeapon01a_59
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 20
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bbb4cc31f80077a0800000000000000
+      internalID: -6381590839784326223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpritesheetInfo_PlayerWithoutWeapon01a_0: 1125438204934412243
+      SpritesheetInfo_PlayerWithoutWeapon01a_1: -3523346245153764042
+      SpritesheetInfo_PlayerWithoutWeapon01a_10: -6403461342235955858
+      SpritesheetInfo_PlayerWithoutWeapon01a_11: 195551125523824993
+      SpritesheetInfo_PlayerWithoutWeapon01a_12: -4781912319869966121
+      SpritesheetInfo_PlayerWithoutWeapon01a_13: -2773338131549811213
+      SpritesheetInfo_PlayerWithoutWeapon01a_14: 2776658363606575714
+      SpritesheetInfo_PlayerWithoutWeapon01a_15: -5552347983137611330
+      SpritesheetInfo_PlayerWithoutWeapon01a_16: -5231596745038408929
+      SpritesheetInfo_PlayerWithoutWeapon01a_17: -36425641534294010
+      SpritesheetInfo_PlayerWithoutWeapon01a_18: -543096452279296087
+      SpritesheetInfo_PlayerWithoutWeapon01a_19: -171561304835731733
+      SpritesheetInfo_PlayerWithoutWeapon01a_2: 6780858558439422165
+      SpritesheetInfo_PlayerWithoutWeapon01a_20: 3046557412188566783
+      SpritesheetInfo_PlayerWithoutWeapon01a_21: -6376112951711948729
+      SpritesheetInfo_PlayerWithoutWeapon01a_22: -2463499187577089689
+      SpritesheetInfo_PlayerWithoutWeapon01a_23: -5533484106093551296
+      SpritesheetInfo_PlayerWithoutWeapon01a_24: -423383423239321304
+      SpritesheetInfo_PlayerWithoutWeapon01a_25: 2039238231056137748
+      SpritesheetInfo_PlayerWithoutWeapon01a_26: -136974800522505110
+      SpritesheetInfo_PlayerWithoutWeapon01a_27: -1616513041607148452
+      SpritesheetInfo_PlayerWithoutWeapon01a_28: 2760512926289553441
+      SpritesheetInfo_PlayerWithoutWeapon01a_29: -4373581411964461199
+      SpritesheetInfo_PlayerWithoutWeapon01a_3: 5943910405970743082
+      SpritesheetInfo_PlayerWithoutWeapon01a_30: -8237612742869861886
+      SpritesheetInfo_PlayerWithoutWeapon01a_31: 2437557290187720371
+      SpritesheetInfo_PlayerWithoutWeapon01a_32: 7001741066805827050
+      SpritesheetInfo_PlayerWithoutWeapon01a_33: 4417994955547713806
+      SpritesheetInfo_PlayerWithoutWeapon01a_34: 4095089048703475559
+      SpritesheetInfo_PlayerWithoutWeapon01a_35: -5152478046687985618
+      SpritesheetInfo_PlayerWithoutWeapon01a_36: -9022717972606420922
+      SpritesheetInfo_PlayerWithoutWeapon01a_37: 4347880029737761851
+      SpritesheetInfo_PlayerWithoutWeapon01a_38: -7152629371464913041
+      SpritesheetInfo_PlayerWithoutWeapon01a_39: 269202883532356316
+      SpritesheetInfo_PlayerWithoutWeapon01a_4: 1343363446634312830
+      SpritesheetInfo_PlayerWithoutWeapon01a_40: -2987429142844480888
+      SpritesheetInfo_PlayerWithoutWeapon01a_41: -1206279300793011258
+      SpritesheetInfo_PlayerWithoutWeapon01a_42: 8475446823885137287
+      SpritesheetInfo_PlayerWithoutWeapon01a_43: -5908429772729992955
+      SpritesheetInfo_PlayerWithoutWeapon01a_44: 1444690648629560912
+      SpritesheetInfo_PlayerWithoutWeapon01a_45: 8771224591512049862
+      SpritesheetInfo_PlayerWithoutWeapon01a_46: -5350109088128496323
+      SpritesheetInfo_PlayerWithoutWeapon01a_47: 676063961693835235
+      SpritesheetInfo_PlayerWithoutWeapon01a_48: -7201422312273503490
+      SpritesheetInfo_PlayerWithoutWeapon01a_49: -6864939423780647469
+      SpritesheetInfo_PlayerWithoutWeapon01a_5: -7728426063583216947
+      SpritesheetInfo_PlayerWithoutWeapon01a_50: 4418877963091452465
+      SpritesheetInfo_PlayerWithoutWeapon01a_51: 4790883282155862121
+      SpritesheetInfo_PlayerWithoutWeapon01a_52: -3424599543783842096
+      SpritesheetInfo_PlayerWithoutWeapon01a_53: -4203576331632150858
+      SpritesheetInfo_PlayerWithoutWeapon01a_54: 6791519170055075740
+      SpritesheetInfo_PlayerWithoutWeapon01a_55: 6325382320857397400
+      SpritesheetInfo_PlayerWithoutWeapon01a_56: -4411528853374093519
+      SpritesheetInfo_PlayerWithoutWeapon01a_57: -7760769399344735262
+      SpritesheetInfo_PlayerWithoutWeapon01a_58: -1842604142641093143
+      SpritesheetInfo_PlayerWithoutWeapon01a_59: -6381590839784326223
+      SpritesheetInfo_PlayerWithoutWeapon01a_6: -2723310887969941995
+      SpritesheetInfo_PlayerWithoutWeapon01a_7: -203844314363345436
+      SpritesheetInfo_PlayerWithoutWeapon01a_8: -5678860593756656851
+      SpritesheetInfo_PlayerWithoutWeapon01a_9: 5646505413648065523
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

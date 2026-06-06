@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: a0689ee34674493469c8a4b873b65d8b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5687525987417969331
+    second: yellow_slime_full_0
+  - first:
+      213: 1663138982697193297
+    second: yellow_slime_full_1
+  - first:
+      213: -612866048948529230
+    second: yellow_slime_full_2
+  - first:
+      213: 6845160243709497396
+    second: yellow_slime_full_3
+  - first:
+      213: -5172787905515242282
+    second: yellow_slime_full_4
+  - first:
+      213: 1631488670917001339
+    second: yellow_slime_full_5
+  - first:
+      213: 7464130375517591365
+    second: yellow_slime_full_6
+  - first:
+      213: -4951620806413942304
+    second: yellow_slime_full_7
+  - first:
+      213: 5086555997618632570
+    second: yellow_slime_full_8
+  - first:
+      213: 6060979698320608207
+    second: yellow_slime_full_9
+  - first:
+      213: 2397604529897062678
+    second: yellow_slime_full_10
+  - first:
+      213: 1997698775079242795
+    second: yellow_slime_full_11
+  - first:
+      213: 2135218210522183284
+    second: yellow_slime_full_12
+  - first:
+      213: -4655290370729850626
+    second: yellow_slime_full_13
+  - first:
+      213: 8955875603499378842
+    second: yellow_slime_full_14
+  - first:
+      213: 579726345136061648
+    second: yellow_slime_full_15
+  - first:
+      213: 5418132770942257333
+    second: yellow_slime_full_16
+  - first:
+      213: 5979574099936884145
+    second: yellow_slime_full_17
+  - first:
+      213: -398694856363170613
+    second: yellow_slime_full_18
+  - first:
+      213: 3582708427130581657
+    second: yellow_slime_full_19
+  - first:
+      213: 4234088022355706391
+    second: yellow_slime_full_20
+  - first:
+      213: 1592215241253078264
+    second: yellow_slime_full_21
+  - first:
+      213: 9071743377635290788
+    second: yellow_slime_full_22
+  - first:
+      213: -8688895239140894648
+    second: yellow_slime_full_23
+  - first:
+      213: 2248426736060481495
+    second: yellow_slime_full_24
+  - first:
+      213: -1298370511325538176
+    second: yellow_slime_full_25
+  - first:
+      213: -4801213095633948476
+    second: yellow_slime_full_26
+  - first:
+      213: -6638135459856491336
+    second: yellow_slime_full_27
+  - first:
+      213: 6147097325497224488
+    second: yellow_slime_full_28
+  - first:
+      213: 6810909474652287764
+    second: yellow_slime_full_29
+  - first:
+      213: 3261602447211936751
+    second: yellow_slime_full_30
+  - first:
+      213: -9148893416856422630
+    second: yellow_slime_full_31
+  - first:
+      213: -3209274782824039794
+    second: yellow_slime_full_32
+  - first:
+      213: 5639206153824934463
+    second: yellow_slime_full_33
+  - first:
+      213: 2278578463901637629
+    second: yellow_slime_full_34
+  - first:
+      213: -3248793652265564980
+    second: yellow_slime_full_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: yellow_slime_full_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 76
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2d9d270c62eee40800000000000000
+      internalID: 5687525987417969331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 75
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f45c3d718a41710800000000000000
+      internalID: 1663138982697193297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 75
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b796895399ae77f0800000000000000
+      internalID: -612866048948529230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 75
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4305ee479f4eefe50800000000000000
+      internalID: 6845160243709497396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 56
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dcb3597ec09638b0800000000000000
+      internalID: -5172787905515242282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_5
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 56
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70051d5d4634a610800000000000000
+      internalID: 1631488670917001339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_6
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 56
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547dde5a70be59760800000000000000
+      internalID: 7464130375517591365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 57
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e183438c1f484bb0800000000000000
+      internalID: -4951620806413942304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_8
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 56
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77f038eab3179640800000000000000
+      internalID: 5086555997618632570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 56
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb01455cecec1450800000000000000
+      internalID: 6060979698320608207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 37
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611c16ced90064120800000000000000
+      internalID: 2397604529897062678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_11
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 37
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2cc4d0a37049bb10800000000000000
+      internalID: 1997698775079242795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_12
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 37
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476be1c46a1d1ad10800000000000000
+      internalID: 2135218210522183284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_13
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 37
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8c9569216156fb0800000000000000
+      internalID: -4655290370729850626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 37
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98ea2f3969a94c70800000000000000
+      internalID: 8955875603499378842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 37
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc35c41a0a9b0800800000000000000
+      internalID: 579726345136061648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_16
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 37
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b88ae57c03113b40800000000000000
+      internalID: 5418132770942257333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_17
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 18
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b53dd676f6bbf250800000000000000
+      internalID: 5979574099936884145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_18
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 18
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4a2b8f32d877af0800000000000000
+      internalID: -398694856363170613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_19
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 18
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992baec155658b130800000000000000
+      internalID: 3582708427130581657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_20
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 18
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7128f388f9082ca30800000000000000
+      internalID: 4234088022355706391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f44ad4735fa81610800000000000000
+      internalID: 1592215241253078264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_22
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae247da98e45ed70800000000000000
+      internalID: 9071743377635290788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_23
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8489c64d0d7da6780800000000000000
+      internalID: -8688895239140894648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_24
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df306a2434043f10800000000000000
+      internalID: 2248426736060481495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_25
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088599526e24bfde0800000000000000
+      internalID: -1298370511325538176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_26
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0f8cf902aae5db0800000000000000
+      internalID: -4801213095633948476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_27
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 6
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc545838fa90e3a0800000000000000
+      internalID: -6638135459856491336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_28
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d0406e270ee4550800000000000000
+      internalID: 6147097325497224488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_29
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413fdf9d416358e50800000000000000
+      internalID: 6810909474652287764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_30
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 5
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febbc90252a834d20800000000000000
+      internalID: 3261602447211936751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_31
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 6
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17fc5809e9980180800000000000000
+      internalID: -9148893416856422630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_32
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a7727a69d5673d0800000000000000
+      internalID: -3209274782824039794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a9eed7e1c724e40800000000000000
+      internalID: 5639206153824934463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_34
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb56bd5a032f9f10800000000000000
+      internalID: 2278578463901637629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_slime_full_35
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4ca28d267f9e2d0800000000000000
+      internalID: -3248793652265564980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      yellow_slime_full_0: 5687525987417969331
+      yellow_slime_full_1: 1663138982697193297
+      yellow_slime_full_10: 2397604529897062678
+      yellow_slime_full_11: 1997698775079242795
+      yellow_slime_full_12: 2135218210522183284
+      yellow_slime_full_13: -4655290370729850626
+      yellow_slime_full_14: 8955875603499378842
+      yellow_slime_full_15: 579726345136061648
+      yellow_slime_full_16: 5418132770942257333
+      yellow_slime_full_17: 5979574099936884145
+      yellow_slime_full_18: -398694856363170613
+      yellow_slime_full_19: 3582708427130581657
+      yellow_slime_full_2: -612866048948529230
+      yellow_slime_full_20: 4234088022355706391
+      yellow_slime_full_21: 1592215241253078264
+      yellow_slime_full_22: 9071743377635290788
+      yellow_slime_full_23: -8688895239140894648
+      yellow_slime_full_24: 2248426736060481495
+      yellow_slime_full_25: -1298370511325538176
+      yellow_slime_full_26: -4801213095633948476
+      yellow_slime_full_27: -6638135459856491336
+      yellow_slime_full_28: 6147097325497224488
+      yellow_slime_full_29: 6810909474652287764
+      yellow_slime_full_3: 6845160243709497396
+      yellow_slime_full_30: 3261602447211936751
+      yellow_slime_full_31: -9148893416856422630
+      yellow_slime_full_32: -3209274782824039794
+      yellow_slime_full_33: 5639206153824934463
+      yellow_slime_full_34: 2278578463901637629
+      yellow_slime_full_35: -3248793652265564980
+      yellow_slime_full_4: -5172787905515242282
+      yellow_slime_full_5: 1631488670917001339
+      yellow_slime_full_6: 7464130375517591365
+      yellow_slime_full_7: -4951620806413942304
+      yellow_slime_full_8: 5086555997618632570
+      yellow_slime_full_9: 6060979698320608207
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

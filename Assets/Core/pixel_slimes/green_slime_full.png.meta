@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: 909d919ae2dff80498f9b68a4ec978a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2269122362495703978
+    second: green_slime_full_0
+  - first:
+      213: 8897397346497321579
+    second: green_slime_full_1
+  - first:
+      213: -3295094756202101136
+    second: green_slime_full_2
+  - first:
+      213: 8130945825220747668
+    second: green_slime_full_3
+  - first:
+      213: 683146684457446003
+    second: green_slime_full_4
+  - first:
+      213: 1142640523821914403
+    second: green_slime_full_5
+  - first:
+      213: -2443549552228904941
+    second: green_slime_full_6
+  - first:
+      213: -687150542887666522
+    second: green_slime_full_7
+  - first:
+      213: -5744778527045698269
+    second: green_slime_full_8
+  - first:
+      213: 3223031354609352765
+    second: green_slime_full_9
+  - first:
+      213: 5942028275647643908
+    second: green_slime_full_10
+  - first:
+      213: 5112117902875695192
+    second: green_slime_full_11
+  - first:
+      213: 8457407248323331539
+    second: green_slime_full_12
+  - first:
+      213: -4939732145572214485
+    second: green_slime_full_13
+  - first:
+      213: -9126148097157774641
+    second: green_slime_full_14
+  - first:
+      213: 344139204556941170
+    second: green_slime_full_15
+  - first:
+      213: -7785643786760265812
+    second: green_slime_full_16
+  - first:
+      213: -7429434527165315825
+    second: green_slime_full_17
+  - first:
+      213: -7067182509628276011
+    second: green_slime_full_18
+  - first:
+      213: 1837988383521332356
+    second: green_slime_full_19
+  - first:
+      213: -5449808983163576255
+    second: green_slime_full_20
+  - first:
+      213: -7139321013814244148
+    second: green_slime_full_21
+  - first:
+      213: 319424761201233295
+    second: green_slime_full_22
+  - first:
+      213: -7387649113920511439
+    second: green_slime_full_23
+  - first:
+      213: -3691848660749345081
+    second: green_slime_full_24
+  - first:
+      213: -3619781089788097970
+    second: green_slime_full_25
+  - first:
+      213: 2228158027486883564
+    second: green_slime_full_26
+  - first:
+      213: 1056781766482418849
+    second: green_slime_full_27
+  - first:
+      213: 1753516718358021269
+    second: green_slime_full_28
+  - first:
+      213: 8749911873560982922
+    second: green_slime_full_29
+  - first:
+      213: 4602846022375323045
+    second: green_slime_full_30
+  - first:
+      213: -2333789373813909862
+    second: green_slime_full_31
+  - first:
+      213: 7662327625573579679
+    second: green_slime_full_32
+  - first:
+      213: -9192015475783883487
+    second: green_slime_full_33
+  - first:
+      213: -4948143714817514494
+    second: green_slime_full_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: green_slime_full_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab937034ca8d7f10800000000000000
+      internalID: 2269122362495703978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 75
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ad9770fb7e97b70800000000000000
+      internalID: 8897397346497321579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 75
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076425307c87542d0800000000000000
+      internalID: -3295094756202101136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 57
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4916a30062ce6d070800000000000000
+      internalID: 8130945825220747668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 56
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a62904a460b7900800000000000000
+      internalID: 683146684457446003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3291f50a0897bdf00800000000000000
+      internalID: 1142640523821914403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_6
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 56
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310d454f0a4c61ed0800000000000000
+      internalID: -2443549552228904941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 56
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6acb6ffc830c676f0800000000000000
+      internalID: -687150542887666522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_8
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 56
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d3626ed527640b0800000000000000
+      internalID: -5744778527045698269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30cf6fc0f18abc20800000000000000
+      internalID: 3223031354609352765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4010e470c33567250800000000000000
+      internalID: 5942028275647643908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_11
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 37
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85812d2c524e1f640800000000000000
+      internalID: 5112117902875695192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_12
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 18
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d54025451fbe5570800000000000000
+      internalID: 8457407248323331539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 37
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29079119cb827bb0800000000000000
+      internalID: -4939732145572214485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 37
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2cd4578a8695180800000000000000
+      internalID: -9126148097157774641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 37
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277e6e088c0a6c400800000000000000
+      internalID: 344139204556941170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_16
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 37
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf5d6ed936d3f390800000000000000
+      internalID: -7785643786760265812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_17
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 37
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f050a4e09a855e890800000000000000
+      internalID: -7429434527165315825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2c0c673f25ced90800000000000000
+      internalID: -7067182509628276011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_19
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c551d52b8d18910800000000000000
+      internalID: 1837988383521332356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 18
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1406dc8aa936e54b0800000000000000
+      internalID: -5449808983163576255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 18
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cccce1a1d590cec90800000000000000
+      internalID: -7139321013814244148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_22
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d0ddfb023de6400800000000000000
+      internalID: 319424761201233295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_23
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132e987b54cc97990800000000000000
+      internalID: -7387649113920511439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_24
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce988b043be3ccc0800000000000000
+      internalID: -3691848660749345081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_25
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a018af644f3cdc0800000000000000
+      internalID: -3619781089788097970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_26
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 6
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee6ac3bbe10cee10800000000000000
+      internalID: 2228158027486883564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_27
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac5b44ea617aae00800000000000000
+      internalID: 1056781766482418849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_28
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59440713a2eb55810800000000000000
+      internalID: 1753516718358021269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_29
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 5
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a85339f6d7eed6970800000000000000
+      internalID: 8749911873560982922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_30
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 6
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a53087021890ef30800000000000000
+      internalID: 4602846022375323045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_31
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a969d31fde6bc9fd0800000000000000
+      internalID: -2333789373813909862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bb9f2f06e065a60800000000000000
+      internalID: 7662327625573579679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_33
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125220c40a66f6080800000000000000
+      internalID: -9192015475783883487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_slime_full_34
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20468bcf189a45bb0800000000000000
+      internalID: -4948143714817514494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      green_slime_full_0: 2269122362495703978
+      green_slime_full_1: 8897397346497321579
+      green_slime_full_10: 5942028275647643908
+      green_slime_full_11: 5112117902875695192
+      green_slime_full_12: 8457407248323331539
+      green_slime_full_13: -4939732145572214485
+      green_slime_full_14: -9126148097157774641
+      green_slime_full_15: 344139204556941170
+      green_slime_full_16: -7785643786760265812
+      green_slime_full_17: -7429434527165315825
+      green_slime_full_18: -7067182509628276011
+      green_slime_full_19: 1837988383521332356
+      green_slime_full_2: -3295094756202101136
+      green_slime_full_20: -5449808983163576255
+      green_slime_full_21: -7139321013814244148
+      green_slime_full_22: 319424761201233295
+      green_slime_full_23: -7387649113920511439
+      green_slime_full_24: -3691848660749345081
+      green_slime_full_25: -3619781089788097970
+      green_slime_full_26: 2228158027486883564
+      green_slime_full_27: 1056781766482418849
+      green_slime_full_28: 1753516718358021269
+      green_slime_full_29: 8749911873560982922
+      green_slime_full_3: 8130945825220747668
+      green_slime_full_30: 4602846022375323045
+      green_slime_full_31: -2333789373813909862
+      green_slime_full_32: 7662327625573579679
+      green_slime_full_33: -9192015475783883487
+      green_slime_full_34: -4948143714817514494
+      green_slime_full_4: 683146684457446003
+      green_slime_full_5: 1142640523821914403
+      green_slime_full_6: -2443549552228904941
+      green_slime_full_7: -687150542887666522
+      green_slime_full_8: -5744778527045698269
+      green_slime_full_9: 3223031354609352765
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

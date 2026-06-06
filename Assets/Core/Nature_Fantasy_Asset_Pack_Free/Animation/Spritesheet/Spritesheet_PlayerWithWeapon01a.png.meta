@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: 65dc0512b666893409536aa78c9cf2da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6523856800657495773
+    second: Spritesheet_PlayerWithWeapon01a_0
+  - first:
+      213: -5808569584249822411
+    second: Spritesheet_PlayerWithWeapon01a_1
+  - first:
+      213: -6322450278515833155
+    second: Spritesheet_PlayerWithWeapon01a_2
+  - first:
+      213: 8971671277689370702
+    second: Spritesheet_PlayerWithWeapon01a_3
+  - first:
+      213: -5839161552448640848
+    second: Spritesheet_PlayerWithWeapon01a_4
+  - first:
+      213: 8621024763172277376
+    second: Spritesheet_PlayerWithWeapon01a_5
+  - first:
+      213: -2207115312044010348
+    second: Spritesheet_PlayerWithWeapon01a_6
+  - first:
+      213: -1441744220397863443
+    second: Spritesheet_PlayerWithWeapon01a_7
+  - first:
+      213: 7872087242551406740
+    second: Spritesheet_PlayerWithWeapon01a_8
+  - first:
+      213: 1304706431802624427
+    second: Spritesheet_PlayerWithWeapon01a_9
+  - first:
+      213: -5282770634959946644
+    second: Spritesheet_PlayerWithWeapon01a_10
+  - first:
+      213: -7239249262427145550
+    second: Spritesheet_PlayerWithWeapon01a_11
+  - first:
+      213: -85026485906354815
+    second: Spritesheet_PlayerWithWeapon01a_12
+  - first:
+      213: -3094448364301571455
+    second: Spritesheet_PlayerWithWeapon01a_13
+  - first:
+      213: 6200395582737036999
+    second: Spritesheet_PlayerWithWeapon01a_14
+  - first:
+      213: -4451153882762863164
+    second: Spritesheet_PlayerWithWeapon01a_15
+  - first:
+      213: -1370026615692390071
+    second: Spritesheet_PlayerWithWeapon01a_16
+  - first:
+      213: 5867390706817285023
+    second: Spritesheet_PlayerWithWeapon01a_17
+  - first:
+      213: -3639541858264122355
+    second: Spritesheet_PlayerWithWeapon01a_18
+  - first:
+      213: -8764479790098442352
+    second: Spritesheet_PlayerWithWeapon01a_19
+  - first:
+      213: -8467412940433783385
+    second: Spritesheet_PlayerWithWeapon01a_20
+  - first:
+      213: -7830039173172271646
+    second: Spritesheet_PlayerWithWeapon01a_21
+  - first:
+      213: 3729976336222686008
+    second: Spritesheet_PlayerWithWeapon01a_22
+  - first:
+      213: 751910682763125387
+    second: Spritesheet_PlayerWithWeapon01a_23
+  - first:
+      213: -356615161447738913
+    second: Spritesheet_PlayerWithWeapon01a_24
+  - first:
+      213: 1120857533525418469
+    second: Spritesheet_PlayerWithWeapon01a_25
+  - first:
+      213: 5203275692830065318
+    second: Spritesheet_PlayerWithWeapon01a_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 207
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6d4b00235698a50800000000000000
+      internalID: 6523856800657495773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 207
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533a6adfcb0d36fa0800000000000000
+      internalID: -5808569584249822411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 207
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db68efe28f42248a0800000000000000
+      internalID: -6322450278515833155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 207
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48ff3c3e77c18c70800000000000000
+      internalID: 8971671277689370702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 159
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b82e28518127fea0800000000000000
+      internalID: -5839161552448640848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 159
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ccab0985804a770800000000000000
+      internalID: 8621024763172277376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_6
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 159
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4949a474150ce51e0800000000000000
+      internalID: -2207115312044010348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_7
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 159
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded763e2545edfbe0800000000000000
+      internalID: -1441744220397863443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_8
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 159
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490392593a54f3d60800000000000000
+      internalID: 7872087242551406740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_9
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 159
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba943cb469f3b1210800000000000000
+      internalID: 1304706431802624427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 111
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6cf859c814dfa6b0800000000000000
+      internalID: -5282770634959946644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 111
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba7588a625098b90800000000000000
+      internalID: -7239249262427145550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_12
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 111
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d4d0f8cdce1def0800000000000000
+      internalID: -85026485906354815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_13
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 111
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a24069b9f4e05d0800000000000000
+      internalID: -3094448364301571455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_14
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 111
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c631ff6eea3c0650800000000000000
+      internalID: 6200395582737036999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_15
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 111
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd915970235a32c0800000000000000
+      internalID: -4451153882762863164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 63
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94113de3d00bcfce0800000000000000
+      internalID: -1370026615692390071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_17
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 63
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bb546d2c82d6150800000000000000
+      internalID: 5867390706817285023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_18
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 63
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c700986ffbd7dc0800000000000000
+      internalID: -3639541858264122355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_19
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 63
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097971e21105e5680800000000000000
+      internalID: -8764479790098442352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_20
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 15
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a506eefac4bd7a80800000000000000
+      internalID: -8467412940433783385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 15
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e56ca97bdc165390800000000000000
+      internalID: -7830039173172271646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_22
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 15
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b8a2d27b983c330800000000000000
+      internalID: 3729976336222686008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_23
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 15
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82eaec38c25f6a00800000000000000
+      internalID: 751910682763125387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_24
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 15
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd1936c666c0d0bf0800000000000000
+      internalID: -356615161447738913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_25
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 15
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e16a99fcf51e8f00800000000000000
+      internalID: 1120857533525418469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_PlayerWithWeapon01a_26
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 15
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a28f8bacafb53840800000000000000
+      internalID: 5203275692830065318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Spritesheet_PlayerWithWeapon01a_0: 6523856800657495773
+      Spritesheet_PlayerWithWeapon01a_1: -5808569584249822411
+      Spritesheet_PlayerWithWeapon01a_10: -5282770634959946644
+      Spritesheet_PlayerWithWeapon01a_11: -7239249262427145550
+      Spritesheet_PlayerWithWeapon01a_12: -85026485906354815
+      Spritesheet_PlayerWithWeapon01a_13: -3094448364301571455
+      Spritesheet_PlayerWithWeapon01a_14: 6200395582737036999
+      Spritesheet_PlayerWithWeapon01a_15: -4451153882762863164
+      Spritesheet_PlayerWithWeapon01a_16: -1370026615692390071
+      Spritesheet_PlayerWithWeapon01a_17: 5867390706817285023
+      Spritesheet_PlayerWithWeapon01a_18: -3639541858264122355
+      Spritesheet_PlayerWithWeapon01a_19: -8764479790098442352
+      Spritesheet_PlayerWithWeapon01a_2: -6322450278515833155
+      Spritesheet_PlayerWithWeapon01a_20: -8467412940433783385
+      Spritesheet_PlayerWithWeapon01a_21: -7830039173172271646
+      Spritesheet_PlayerWithWeapon01a_22: 3729976336222686008
+      Spritesheet_PlayerWithWeapon01a_23: 751910682763125387
+      Spritesheet_PlayerWithWeapon01a_24: -356615161447738913
+      Spritesheet_PlayerWithWeapon01a_25: 1120857533525418469
+      Spritesheet_PlayerWithWeapon01a_26: 5203275692830065318
+      Spritesheet_PlayerWithWeapon01a_3: 8971671277689370702
+      Spritesheet_PlayerWithWeapon01a_4: -5839161552448640848
+      Spritesheet_PlayerWithWeapon01a_5: 8621024763172277376
+      Spritesheet_PlayerWithWeapon01a_6: -2207115312044010348
+      Spritesheet_PlayerWithWeapon01a_7: -1441744220397863443
+      Spritesheet_PlayerWithWeapon01a_8: 7872087242551406740
+      Spritesheet_PlayerWithWeapon01a_9: 1304706431802624427
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
