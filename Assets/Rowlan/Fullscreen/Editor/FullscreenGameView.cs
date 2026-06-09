@@ -2,29 +2,64 @@ using System;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Rowlan.Fullscreen
 {
     /// <summary>
-    /// True fullscreen Game View in the Unity Editor (Windows + macOS).
-    /// No menus, no toolbar, no status bar, no tabs, no OS taskbar/dock.
-    ///
-    /// USAGE:
-    ///   - Press F11 (configurable) during Play Mode to toggle fullscreen on/off
-    ///   - Press Escape (configurable) to exit fullscreen without stopping play
-    ///   - Menu: Tools → Rowlan → Fullscreen → Fullscreen On Play — toggles auto-fullscreen on play
-    ///   - Press F12 (configurable) to force-exit fullscreen and reset the editor layout
-    ///   - Preferences: Edit → Preferences → Rowlan/Fullscreen — configure keybinds and behavior
-    ///
-    /// REQUIREMENTS:
-    ///   - Unity 6.000.40+ (for hiding GameView toolbar via showToolbar property)
-    ///
-    /// State persistence and orphan recovery after domain reload are handled by
-    /// FullscreenStateGuard. This class focuses on the popup lifecycle, platform
-    /// calls, keybind injection, and editor callbacks.
+    ///     True fullscreen Game View in the Unity Editor (Windows + macOS).
+    ///     No menus, no toolbar, no status bar, no tabs, no OS taskbar/dock.
+    ///     USAGE:
+    ///     - Press F11 (configurable) during Play Mode to toggle fullscreen on/off
+    ///     - Press Escape (configurable) to exit fullscreen without stopping play
+    ///     - Menu: Tools → Rowlan → Fullscreen → Fullscreen On Play — toggles auto-fullscreen on play
+    ///     - Press F12 (configurable) to force-exit fullscreen and reset the editor layout
+    ///     - Preferences: Edit → Preferences → Rowlan/Fullscreen — configure keybinds and behavior
+    ///     REQUIREMENTS:
+    ///     - Unity 6.000.40+ (for hiding GameView toolbar via showToolbar property)
+    ///     State persistence and orphan recovery after domain reload are handled by
+    ///     FullscreenStateGuard. This class focuses on the popup lifecycle, platform
+    ///     calls, keybind injection, and editor callbacks.
     /// </summary>
     public static class FullscreenGameView
     {
+        #region Public Properties
+
+        /// <summary>
+        ///     Whether the editor is currently in fullscreen mode.
+        ///     Checks the in-memory reference only. After domain reload this will
+        ///     be false even if an orphaned popup still exists — use
+        ///     FullscreenStateGuard.WasFullscreen to detect that case.
+        /// </summary>
+        public static bool IsFullscreen => IsAlive(fullscreenInstance);
+
+        #endregion
+
+        #region Public API
+
+        /// <summary>
+        ///     Toggles fullscreen mode on or off. Called by the runtime key listener via delegate.
+        /// </summary>
+        public static void Toggle()
+        {
+            if (GameViewType == null)
+            {
+                Debug.LogError("[Fullscreen] GameView type not found.");
+                return;
+            }
+
+            if (ShowToolbarProperty == null)
+                Debug.LogWarning("[Fullscreen] GameView.showToolbar not found. " +
+                                 "Play toolbar may remain visible. Requires Unity 6.000.40+.");
+
+            if (IsFullscreen)
+                ExitFullscreen();
+            else
+                EnterFullscreen();
+        }
+
+        #endregion
+
         #region Private State
 
         private static readonly Type GameViewType = Type.GetType("UnityEditor.GameView,UnityEditor");
@@ -39,7 +74,8 @@ namespace Rowlan.Fullscreen
             GameViewType?.GetField("m_Gizmos", BindingFlags.Instance | BindingFlags.NonPublic);
 
         private static readonly PropertyInfo VSyncEnabledProperty =
-            GameViewType?.GetProperty("vSyncEnabled", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+            GameViewType?.GetProperty("vSyncEnabled",
+                BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
 
         private static readonly FieldInfo TargetDisplayField =
             GameViewType?.GetField("m_TargetDisplay", BindingFlags.Instance | BindingFlags.NonPublic);
@@ -53,23 +89,11 @@ namespace Rowlan.Fullscreen
 
         #endregion
 
-        #region Public Properties
-
-        /// <summary>
-        /// Whether the editor is currently in fullscreen mode.
-        /// Checks the in-memory reference only. After domain reload this will
-        /// be false even if an orphaned popup still exists — use
-        /// FullscreenStateGuard.WasFullscreen to detect that case.
-        /// </summary>
-        public static bool IsFullscreen => IsAlive(fullscreenInstance);
-
-        #endregion
-
         #region Menu Items
 
         /// <summary>
-        /// Toggles the auto-fullscreen preference. When checked, entering Play Mode
-        /// will automatically activate fullscreen. This menu item performs no immediate action.
+        ///     Toggles the auto-fullscreen preference. When checked, entering Play Mode
+        ///     will automatically activate fullscreen. This menu item performs no immediate action.
         /// </summary>
         [MenuItem("Tools/Rowlan/Fullscreen/Fullscreen On Play", priority = 2)]
         private static void ToggleAutoFullscreen()
@@ -78,7 +102,7 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Validates the menu item checkmark state to reflect the current preference.
+        ///     Validates the menu item checkmark state to reflect the current preference.
         /// </summary>
         [MenuItem("Tools/Rowlan/Fullscreen/Fullscreen On Play", true)]
         private static bool ToggleAutoFullscreenValidate()
@@ -88,44 +112,14 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Exits fullscreen and resets the Unity editor layout to default.
+        ///     Exits fullscreen and resets the Unity editor layout to default.
         /// </summary>
         [MenuItem("Tools/Rowlan/Fullscreen/Fullscreen Reset", priority = 3)]
         private static void ResetUnityLayout()
         {
             RunForceCleanup();
 
-            EditorApplication.delayCall += () =>
-            {
-                EditorApplication.ExecuteMenuItem("Window/Layouts/Default");
-            };
-        }
-
-        #endregion
-
-        #region Public API
-
-        /// <summary>
-        /// Toggles fullscreen mode on or off. Called by the runtime key listener via delegate.
-        /// </summary>
-        public static void Toggle()
-        {
-            if (GameViewType == null)
-            {
-                Debug.LogError("[Fullscreen] GameView type not found.");
-                return;
-            }
-
-            if (ShowToolbarProperty == null)
-            {
-                Debug.LogWarning("[Fullscreen] GameView.showToolbar not found. " +
-                                 "Play toolbar may remain visible. Requires Unity 6.000.40+.");
-            }
-
-            if (IsFullscreen)
-                ExitFullscreen();
-            else
-                EnterFullscreen();
+            EditorApplication.delayCall += () => { EditorApplication.ExecuteMenuItem("Window/Layouts/Default"); };
         }
 
         #endregion
@@ -133,8 +127,8 @@ namespace Rowlan.Fullscreen
         #region Core Logic
 
         /// <summary>
-        /// Creates a borderless popup GameView covering the entire screen
-        /// and invokes platform-specific logic to cover the OS taskbar/dock.
+        ///     Creates a borderless popup GameView covering the entire screen
+        ///     and invokes platform-specific logic to cover the OS taskbar/dock.
         /// </summary>
         private static async void EnterFullscreen()
         {
@@ -147,15 +141,15 @@ namespace Rowlan.Fullscreen
             }
 
             // Capture overlay states from the original GameView before redirecting it
-            EditorWindow originalGameView = GetMainGameView();
-            bool showStats = GetFieldValue<bool>(originalGameView, ShowStatsField);
-            bool showGizmos = GetFieldValue<bool>(originalGameView, ShowGizmosField);
+            var originalGameView = GetMainGameView();
+            var showStats = GetFieldValue<bool>(originalGameView, ShowStatsField);
+            var showGizmos = GetFieldValue<bool>(originalGameView, ShowGizmosField);
 
             // Save the original target display so we can restore it on exit
-            int origDisplay = GetGameViewTargetDisplay(originalGameView);
+            var origDisplay = GetGameViewTargetDisplay(originalGameView);
 
             // Capture the ContainerWindow position BEFORE the async gap.
-            Rect containerRect = GetContainerWindowRect(originalGameView);
+            var containerRect = GetContainerWindowRect(originalGameView);
 
             // Fix resolution when entering fullscreen from a non-fullscreen Game View:
             // Unity's Game View can latch onto a stale resolution from its previous
@@ -207,21 +201,26 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Closes the fullscreen popup, restores platform window state,
-        /// and redirects the original GameView back to its original display.
+        ///     Closes the fullscreen popup, restores platform window state,
+        ///     and redirects the original GameView back to its original display.
         /// </summary>
         private static void ExitFullscreen()
         {
             FullscreenPlatform.OnExitFullscreen();
 
             if (IsAlive(fullscreenInstance))
-            {
-                try { fullscreenInstance.Close(); } catch { }
-            }
+                try
+                {
+                    fullscreenInstance.Close();
+                }
+                catch
+                {
+                }
+
             fullscreenInstance = null;
 
             // Read display to restore from persisted state (survives domain reload)
-            int displayToRestore = FullscreenStateGuard.OriginalDisplay;
+            var displayToRestore = FullscreenStateGuard.OriginalDisplay;
 
             // Clear persisted state now that we're exiting cleanly
             FullscreenStateGuard.Clear();
@@ -230,11 +229,23 @@ namespace Rowlan.Fullscreen
             // may still be mid-destruction during ExitingPlayMode
             EditorApplication.delayCall += () =>
             {
-                try { SetGameViewTargetDisplay(displayToRestore); } catch { }
+                try
+                {
+                    SetGameViewTargetDisplay(displayToRestore);
+                }
+                catch
+                {
+                }
             };
 
             // Restore the Scene View if it was open before entering fullscreen
-            try { ResumeSceneView(); } catch { }
+            try
+            {
+                ResumeSceneView();
+            }
+            catch
+            {
+            }
 
             // Restore original VSync setting
             RestoreVSync();
@@ -247,9 +258,9 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Delegates to FullscreenStateGuard.ForceCleanup, passing the in-memory
-        /// instance and a callback for display restoration. Clears the local
-        /// static reference afterward.
+        ///     Delegates to FullscreenStateGuard.ForceCleanup, passing the in-memory
+        ///     instance and a callback for display restoration. Clears the local
+        ///     static reference afterward.
         /// </summary>
         private static void RunForceCleanup()
         {
@@ -262,12 +273,11 @@ namespace Rowlan.Fullscreen
         #region Helpers
 
         /// <summary>
-        /// Gets the position of the OS-level ContainerWindow that hosts the given EditorWindow.
-        /// This is the actual window rect in virtual screen coordinates, unlike
-        /// EditorWindow.position which for docked windows returns view-relative coordinates.
-        ///
-        /// Accesses: editorWindow → m_Parent (View) → window (ContainerWindow) → position (Rect)
-        /// Falls back to a zero-origin rect using Screen.currentResolution if reflection fails.
+        ///     Gets the position of the OS-level ContainerWindow that hosts the given EditorWindow.
+        ///     This is the actual window rect in virtual screen coordinates, unlike
+        ///     EditorWindow.position which for docked windows returns view-relative coordinates.
+        ///     Accesses: editorWindow → m_Parent (View) → window (ContainerWindow) → position (Rect)
+        ///     Falls back to a zero-origin rect using Screen.currentResolution if reflection fails.
         /// </summary>
         private static Rect GetContainerWindowRect(EditorWindow editorWindow)
         {
@@ -303,25 +313,31 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Checks whether a UnityEngine.Object reference is both non-null in C#
-        /// and has not been destroyed by Unity.
+        ///     Checks whether a UnityEngine.Object reference is both non-null in C#
+        ///     and has not been destroyed by Unity.
         /// </summary>
-        private static bool IsAlive(UnityEngine.Object obj)
+        private static bool IsAlive(Object obj)
         {
             if (ReferenceEquals(obj, null)) return false;
-            try { return obj != null; }
-            catch { return false; }
+            try
+            {
+                return obj != null;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         /// <summary>
-        /// Finds and returns the main GameView editor window instance.
-        /// Skips the fullscreen popup if one exists.
+        ///     Finds and returns the main GameView editor window instance.
+        ///     Skips the fullscreen popup if one exists.
         /// </summary>
         private static EditorWindow GetMainGameView()
         {
             if (GameViewType == null) return null;
 
-            UnityEngine.Object[] gameViews = Resources.FindObjectsOfTypeAll(GameViewType);
+            var gameViews = Resources.FindObjectsOfTypeAll(GameViewType);
             foreach (var gv in gameViews)
             {
                 if (!IsAlive(gv)) continue;
@@ -332,25 +348,32 @@ namespace Rowlan.Fullscreen
 
                 return gv as EditorWindow;
             }
+
             return null;
         }
 
         /// <summary>
-        /// Reads the current target display index from a GameView instance.
+        ///     Reads the current target display index from a GameView instance.
         /// </summary>
         private static int GetGameViewTargetDisplay(EditorWindow gameView)
         {
             if (!IsAlive(gameView) || TargetDisplayField == null) return 0;
-            try { return (int)TargetDisplayField.GetValue(gameView); }
-            catch { return 0; }
+            try
+            {
+                return (int)TargetDisplayField.GetValue(gameView);
+            }
+            catch
+            {
+                return 0;
+            }
         }
 
         /// <summary>
-        /// Redirects the main GameView to render from a specific display index.
+        ///     Redirects the main GameView to render from a specific display index.
         /// </summary>
         private static void SetGameViewTargetDisplay(int displayIndex)
         {
-            EditorWindow gameView = GetMainGameView();
+            var gameView = GetMainGameView();
             if (!IsAlive(gameView)) return;
 
             try
@@ -363,11 +386,13 @@ namespace Rowlan.Fullscreen
                     new object[] { displayIndex }
                 );
             }
-            catch { }
+            catch
+            {
+            }
         }
 
         /// <summary>
-        /// Safely reads a private field value from an EditorWindow via reflection.
+        ///     Safely reads a private field value from an EditorWindow via reflection.
         /// </summary>
         private static T GetFieldValue<T>(EditorWindow window, FieldInfo field)
         {
@@ -376,7 +401,7 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Safely writes a private field value on an EditorWindow via reflection.
+        ///     Safely writes a private field value on an EditorWindow via reflection.
         /// </summary>
         private static void SetFieldValue(EditorWindow window, FieldInfo field, object value)
         {
@@ -385,7 +410,7 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Disables Scene View rendering to save GPU/CPU cost while in fullscreen.
+        ///     Disables Scene View rendering to save GPU/CPU cost while in fullscreen.
         /// </summary>
         private static void PauseSceneView()
         {
@@ -399,7 +424,7 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Restores Scene View rendering after exiting fullscreen.
+        ///     Restores Scene View rendering after exiting fullscreen.
         /// </summary>
         private static void ResumeSceneView()
         {
@@ -413,13 +438,13 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Saves the current VSync setting and applies the fullscreen preference.
+        ///     Saves the current VSync setting and applies the fullscreen preference.
         /// </summary>
         private static void ApplyVSync()
         {
             originalVSyncCount = QualitySettings.vSyncCount;
 
-            bool vsync = FullscreenSettings.VSync;
+            var vsync = FullscreenSettings.VSync;
             QualitySettings.vSyncCount = vsync ? 1 : 0;
 
             if (IsAlive(fullscreenInstance))
@@ -427,7 +452,7 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Restores the VSync setting that was active before entering fullscreen.
+        ///     Restores the VSync setting that was active before entering fullscreen.
         /// </summary>
         private static void RestoreVSync()
         {
@@ -435,7 +460,7 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Saves the current cursor visibility and hides it if configured.
+        ///     Saves the current cursor visibility and hides it if configured.
         /// </summary>
         private static void ApplyCursorVisibility()
         {
@@ -446,7 +471,7 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Restores the cursor visibility that was active before entering fullscreen.
+        ///     Restores the cursor visibility that was active before entering fullscreen.
         /// </summary>
         private static void RestoreCursorVisibility()
         {
@@ -458,11 +483,10 @@ namespace Rowlan.Fullscreen
         #region Callbacks
 
         /// <summary>
-        /// Registers callbacks and delegates orphan recovery to FullscreenStateGuard.
-        ///
-        /// [InitializeOnLoadMethod] runs after every domain reload. The guard checks
-        /// if SessionState says "fullscreen was active" while the in-memory reference
-        /// is gone, and schedules ForceCleanup if so.
+        ///     Registers callbacks and delegates orphan recovery to FullscreenStateGuard.
+        ///     [InitializeOnLoadMethod] runs after every domain reload. The guard checks
+        ///     if SessionState says "fullscreen was active" while the in-memory reference
+        ///     is gone, and schedules ForceCleanup if so.
         /// </summary>
         [InitializeOnLoadMethod]
         private static void RegisterCallbacks()
@@ -481,20 +505,18 @@ namespace Rowlan.Fullscreen
             // whose containing class was reloaded. Re-spawn and re-inject so
             // hotkeys keep working.
             if (EditorApplication.isPlaying && FullscreenSettings.Enabled)
-            {
                 EditorApplication.delayCall += () =>
                 {
                     if (!EditorApplication.isPlaying) return;
                     var listener = SpawnKeyListener();
                     InjectKeybinds(listener);
                 };
-            }
         }
 
         /// <summary>
-        /// Handles Play Mode transitions: injects keybinds, wires delegates,
-        /// spawns the key listener on enter, auto-enters fullscreen if enabled,
-        /// and runs ForceCleanup on stop.
+        ///     Handles Play Mode transitions: injects keybinds, wires delegates,
+        ///     spawns the key listener on enter, auto-enters fullscreen if enabled,
+        ///     and runs ForceCleanup on stop.
         /// </summary>
         private static void OnPlayModeStateChanged(PlayModeStateChange state)
         {
@@ -513,16 +535,13 @@ namespace Rowlan.Fullscreen
                 // Always attempt cleanup when returning to edit mode.
                 // After domain reload the static is null but the popup and
                 // platform state may still be alive.
-                if (IsFullscreen || FullscreenStateGuard.WasFullscreen)
-                {
-                    RunForceCleanup();
-                }
+                if (IsFullscreen || FullscreenStateGuard.WasFullscreen) RunForceCleanup();
             }
         }
 
         /// <summary>
-        /// Copies the current keybind preferences into the shared runtime FullscreenKeybinds,
-        /// wires up the delegate callbacks, and re-resolves the cached KeyControls.
+        ///     Copies the current keybind preferences into the shared runtime FullscreenKeybinds,
+        ///     wires up the delegate callbacks, and re-resolves the cached KeyControls.
         /// </summary>
         private static void InjectKeybinds(FullscreenKeyListener listener)
         {
@@ -538,16 +557,16 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Creates a hidden, persistent GameObject with the FullscreenKeyListener attached.
+        ///     Creates a hidden, persistent GameObject with the FullscreenKeyListener attached.
         /// </summary>
         private static FullscreenKeyListener SpawnKeyListener()
         {
-            var existing = UnityEngine.Object.FindFirstObjectByType<FullscreenKeyListener>();
+            var existing = Object.FindFirstObjectByType<FullscreenKeyListener>();
             if (existing != null) return existing;
 
             var go = new GameObject("[FullscreenKeyListener]");
             go.hideFlags = HideFlags.HideAndDontSave;
-            UnityEngine.Object.DontDestroyOnLoad(go);
+            Object.DontDestroyOnLoad(go);
             return go.AddComponent<FullscreenKeyListener>();
         }
 

@@ -1,6 +1,5 @@
-using System;
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 public class UnlockCursor : MonoBehaviour
 {
@@ -14,7 +13,7 @@ public class UnlockCursor : MonoBehaviour
         yield return new WaitForSeconds(5.5f);
         // Делает курсор свободным
         Cursor.lockState = CursorLockMode.None;
-    
+
         // Делает курсор видимым
         Cursor.visible = true;
     }

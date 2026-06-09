@@ -12,6 +12,5 @@ namespace EnemyAI
         public float minMoveInterval;
         public float maxMoveInterval;
         public float enemyHealth;
-
     }
 }

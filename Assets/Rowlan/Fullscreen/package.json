@@ -3,10 +3,10 @@
   "displayName": "Fullscreen Editor Play Mode",
   "version": "1.6.0",
   "author": {
-	"name": "Rowlan",
-	"email": "",
-	"url": ""
-  },    
+    "name": "Rowlan",
+    "email": "",
+    "url": ""
+  },
   "unity": "6000.1",
   "description": "Show game view play mode in full screen inside the Unity Editor",
   "keywords": [

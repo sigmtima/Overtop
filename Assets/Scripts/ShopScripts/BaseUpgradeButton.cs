@@ -4,28 +4,26 @@ using UnityEngine;
 
 namespace ShopScripts
 {
-    public class UpgradeButton: MonoBehaviour
+    public class UpgradeButton : MonoBehaviour
 
     {
-     [SerializeField] private BaseUpgrade upgrade;
-     [SerializeField] private UpgradeData upgradeData;
-     [SerializeField] private TextMeshProUGUI priceText;
-     [SerializeField] private TextMeshProUGUI levelText;
-     [SerializeField] private ShopManager shopManager;
-   
+        [SerializeField] private BaseUpgrade upgrade;
+        [SerializeField] private UpgradeData upgradeData;
+        [SerializeField] private TextMeshProUGUI priceText;
+        [SerializeField] private TextMeshProUGUI levelText;
+        [SerializeField] private ShopManager shopManager;
 
-     public void TryBuyUpgrade()
-     {
-         shopManager.BuyUpgrade(upgrade);
-     }
+        public void Start()
+        {
+            upgrade.Initialize(upgradeData);
 
-     public void Start()
-     {
-         upgrade.Initialize(upgradeData);
-         
-         levelText.text = $"{upgrade.CurrentLevel}";
-         priceText.text = $"{upgrade.Price}";
-     }
-     
+            levelText.text = $"{upgrade.CurrentLevel}";
+            priceText.text = $"{upgrade.Price}";
+        }
+
+        public void TryBuyUpgrade()
+        {
+            shopManager.BuyUpgrade(upgrade);
+        }
     }
 }

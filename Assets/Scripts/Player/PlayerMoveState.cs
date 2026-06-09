@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class PlayerMoveState : BaseState<PlayerContext>
 {
-    private PlayerMovementData _data;
     private Vector2 _currentVelocity;
-    private Vector2 _direction;
-    private float _inputX;
-    private float _inputY;
+    private PlayerMovementData _data;
 
-    public PlayerMoveState(PlayerContext context) : base(context) { }
+  
+
+    public PlayerMoveState(PlayerContext context) : base(context)
+    {
+    }
 
     public override void Enter()
     {
@@ -19,23 +20,20 @@ public class PlayerMoveState : BaseState<PlayerContext>
 
     public override void Update()
     {
-        _inputX = Input.GetAxis("Horizontal");
-        _inputY = Input.GetAxis("Vertical");
+        
+ 
+       
 
-        _direction = new Vector2(_inputX, _inputY).normalized;
-
-        if (_inputX == 0f && _inputY == 0f )
-        {
-            Context.Controller.ChangeState(new PlayerIdleState(Context));
-        }
+        if (Context.InputManager.MoveInput.x == 0f && Context.InputManager.MoveInput.y == 0f) Context.Controller.ChangeState(new PlayerIdleState(Context));
     }
 
     public override void FixedUpdate()
     {
-        Vector2 targetVelocity = _direction * _data.walkSpeed;
-        float currentSpeedDiff = (_direction.magnitude > 0f) ? _data.acceleration : _data.deceleration;
+        var targetVelocity = Context.InputManager.MoveInput * _data.walkSpeed;
+        var currentSpeedDiff = Context.InputManager.MoveInput.magnitude > 0f ? _data.acceleration : _data.deceleration;
 
-        _currentVelocity = Vector2.MoveTowards(_currentVelocity, targetVelocity, currentSpeedDiff * Time.fixedDeltaTime);
+        _currentVelocity =
+            Vector2.MoveTowards(_currentVelocity, targetVelocity, currentSpeedDiff * Time.fixedDeltaTime);
         Context.Rb.linearVelocity = _currentVelocity;
     }
 

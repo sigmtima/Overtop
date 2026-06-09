@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 //***********************************************************************************
@@ -5,7 +6,7 @@ using UnityEngine;
 //***********************************************************************************
 namespace NavMeshPlus.Extensions
 {
-    [System.Serializable]
+    [Serializable]
     public class NavMeshAgentAttribute : PropertyAttribute
     {
     }

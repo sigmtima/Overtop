@@ -1,42 +1,39 @@
 using System;
+using EnemyAI;
 using UnityEngine;
-
 
 public class LevelDirector : MonoBehaviour
 {
-   public static event Action OnLevelCleared;
-   private int _enemyCount;
-   [SerializeField] private string enemyTag;
-  public static LevelDirector Instance;
-  
-   public Transform PlayerTransform;
-   private void Awake()
-   {
-      
-      Instance = this;
-   
-      _enemyCount = GameObject.FindGameObjectsWithTag(enemyTag).Length;
-   }
+    public static LevelDirector Instance;
+    [SerializeField] private string enemyTag;
 
-   public void HandleEnemyDeath(Vector3 position)
-   {
-      _enemyCount--;
-      if (_enemyCount <= 0)
-      {
-      
-      }
-     
-   }
-   
+    public Transform PlayerTransform;
+    private int _enemyCount;
 
-   public void OnDisable()
-   {
-      EnemyAI.EnemyController.OnEnemyDeath -= HandleEnemyDeath;
-   }
+    private void Awake()
+    {
+        Instance = this;
 
-   public void OnEnable()
-   {
-      EnemyAI.EnemyController.OnEnemyDeath += HandleEnemyDeath;
-   }
-   }
+        _enemyCount = GameObject.FindGameObjectsWithTag(enemyTag).Length;
+    }
 
+    public void OnEnable()
+    {
+        EnemyController.OnEnemyDeath += HandleEnemyDeath;
+    }
+
+    public void OnDisable()
+    {
+        EnemyController.OnEnemyDeath -= HandleEnemyDeath;
+    }
+
+    public static event Action OnLevelCleared;
+
+    public void HandleEnemyDeath(Vector3 position)
+    {
+        _enemyCount--;
+        if (_enemyCount <= 0)
+        {
+        }
+    }
+}

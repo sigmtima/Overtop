@@ -1,78 +1,59 @@
 using System.Collections;
 using UnityEngine;
 
-
-namespace Weapon{
-public class WeaponController : MonoBehaviour
+namespace Weapon
 {
-      [SerializeField] private BulletsPool bulletsPoolObject;
-
-      public WeaponData WeaponData;
-    private int _currentAmmo;
-    private bool _isReloading;
-
-    private float _nextAttackTime;
-
-   
-    public void Start()
+    public class WeaponController : MonoBehaviour
     {
-   
-        _currentAmmo = WeaponData.magazineSize;
-       
-        
-        
-    }
+        [SerializeField] private BulletsPool bulletsPoolObject;
 
-    public void TryShoot(Vector2 direction)
-    {
+        public WeaponData WeaponData;
+        private int _currentAmmo;
+        private bool _isReloading;
 
-        if (_isReloading == true || _currentAmmo <= 0)
+        private float _nextAttackTime;
+
+        public void Start()
         {
-            StartReload();
-            return;
+            _currentAmmo = WeaponData.magazineSize;
         }
 
-
-        if (Time.time >= _nextAttackTime)
+        public void TryShoot(Vector2 direction)
         {
-          
-
-            Bullet bullet = PoolManager.Instance.GetBullet(WeaponData.bulletType);
-         
-         
-
-
-            
-            bullet.Setup(WeaponData.bulletDistance,  WeaponData.damage,transform.position, direction,WeaponData.bulletSpeed);
-
-            if (bullet.Rb != null)
+            if (_isReloading || _currentAmmo <= 0)
             {
-                _currentAmmo--;
-                _nextAttackTime = Time.time + WeaponData._attackCooldown;
+                StartReload();
+                return;
+            }
+
+            if (Time.time >= _nextAttackTime)
+            {
+                var bullet = PoolManager.Instance.GetBullet(WeaponData.bulletType);
+
+                bullet.Setup(WeaponData.bulletDistance, WeaponData.damage, transform.position, direction,
+                    WeaponData.bulletSpeed);
+
+                if (bullet.Rb != null)
+                {
+                    _currentAmmo--;
+                    _nextAttackTime = Time.time + WeaponData._attackCooldown;
+                }
             }
         }
-    }
 
-    private void StartReload()
-    {
-        if (_isReloading || _currentAmmo == WeaponData.magazineSize)
+        private void StartReload()
         {
-            return;
+            if (_isReloading || _currentAmmo == WeaponData.magazineSize) return;
+
+            StartCoroutine(ReloadRoutine());
         }
 
-        StartCoroutine(ReloadRoutine());
+        private IEnumerator ReloadRoutine()
+        {
+            _isReloading = true;
+            yield return new WaitForSeconds(WeaponData.reloadTime);
+            _currentAmmo = WeaponData.magazineSize;
+            _isReloading = false;
+        }
     }
-
-    private IEnumerator ReloadRoutine()
-    {
-       
-      _isReloading = true;
-      yield return new WaitForSeconds(WeaponData.reloadTime);
-      _currentAmmo = WeaponData.magazineSize;
-      _isReloading = false;
-    }
-}  
-
-
 }
-

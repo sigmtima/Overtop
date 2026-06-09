@@ -6,9 +6,9 @@ using UnityEngine.InputSystem;
 namespace Rowlan.Fullscreen
 {
     /// <summary>
-    /// Persistent editor preferences for the Fullscreen Game View feature.
-    /// Stores keybind assignments and the auto-fullscreen toggle via EditorPrefs.
-    /// Provides a SettingsProvider for the Unity Preferences window under "Rowlan/Fullscreen".
+    ///     Persistent editor preferences for the Fullscreen Game View feature.
+    ///     Stores keybind assignments and the auto-fullscreen toggle via EditorPrefs.
+    ///     Provides a SettingsProvider for the Unity Preferences window under "Rowlan/Fullscreen".
     /// </summary>
     public static class FullscreenSettings
     {
@@ -42,9 +42,9 @@ namespace Rowlan.Fullscreen
         #region Properties
 
         /// <summary>
-        /// Master switch for the entire Fullscreen feature. When disabled,
-        /// keybinds are not registered, auto-fullscreen is skipped, and
-        /// the key listener is not spawned during Play Mode.
+        ///     Master switch for the entire Fullscreen feature. When disabled,
+        ///     keybinds are not registered, auto-fullscreen is skipped, and
+        ///     the key listener is not spawned during Play Mode.
         /// </summary>
         public static bool Enabled
         {
@@ -53,7 +53,7 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// The key used to toggle fullscreen on and off during Play Mode.
+        ///     The key used to toggle fullscreen on and off during Play Mode.
         /// </summary>
         public static Key ToggleKey
         {
@@ -62,7 +62,7 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// The key used to exit fullscreen without stopping Play Mode.
+        ///     The key used to exit fullscreen without stopping Play Mode.
         /// </summary>
         public static Key ExitKey
         {
@@ -71,8 +71,8 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// The key used to force-exit fullscreen and reset the editor layout to default.
-        /// Acts as a safety fallback when the editor becomes unresponsive in fullscreen.
+        ///     The key used to force-exit fullscreen and reset the editor layout to default.
+        ///     Acts as a safety fallback when the editor becomes unresponsive in fullscreen.
         /// </summary>
         public static Key ResetKey
         {
@@ -81,7 +81,7 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Whether fullscreen should activate automatically when entering Play Mode.
+        ///     Whether fullscreen should activate automatically when entering Play Mode.
         /// </summary>
         public static bool AutoFullscreen
         {
@@ -90,9 +90,9 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Whether VSync should be enabled during fullscreen Play Mode.
-        /// When disabled, the frame rate is uncapped (useful for performance testing).
-        /// The original VSync setting is restored when exiting fullscreen.
+        ///     Whether VSync should be enabled during fullscreen Play Mode.
+        ///     When disabled, the frame rate is uncapped (useful for performance testing).
+        ///     The original VSync setting is restored when exiting fullscreen.
         /// </summary>
         public static bool VSync
         {
@@ -101,8 +101,8 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Whether the mouse cursor should be hidden during fullscreen Play Mode.
-        /// The original cursor visibility is restored when exiting fullscreen.
+        ///     Whether the mouse cursor should be hidden during fullscreen Play Mode.
+        ///     The original cursor visibility is restored when exiting fullscreen.
         /// </summary>
         public static bool HideCursor
         {
@@ -111,8 +111,8 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Whether debug log messages should be printed to the console when
-        /// entering and exiting fullscreen. Disable to reduce console noise.
+        ///     Whether debug log messages should be printed to the console when
+        ///     entering and exiting fullscreen. Disable to reduce console noise.
         /// </summary>
         public static bool DebugLogging
         {
@@ -125,7 +125,7 @@ namespace Rowlan.Fullscreen
         #region Settings Provider
 
         /// <summary>
-        /// Registers the preferences panel under Edit → Preferences → Rowlan/Fullscreen.
+        ///     Registers the preferences panel under Edit → Preferences → Rowlan/Fullscreen.
         /// </summary>
         /// <returns>A SettingsProvider instance for the Unity Preferences window.</returns>
         [SettingsProvider]
@@ -140,8 +140,8 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Draws the preferences GUI with keybind fields, auto-fullscreen toggle,
-        /// and a reset button.
+        ///     Draws the preferences GUI with keybind fields, auto-fullscreen toggle,
+        ///     and a reset button.
         /// </summary>
         /// <param name="searchContext">The current search filter from the Preferences window.</param>
         private static void OnGUI(string searchContext)
@@ -150,7 +150,8 @@ namespace Rowlan.Fullscreen
             EditorGUILayout.Space(10);
 
             Enabled = EditorGUILayout.Toggle(
-                new GUIContent("Enabled", "Master switch for the Fullscreen feature. When disabled, all fullscreen functionality is turned off."),
+                new GUIContent("Enabled",
+                    "Master switch for the Fullscreen feature. When disabled, all fullscreen functionality is turned off."),
                 Enabled);
 
             EditorGUILayout.Space(10);
@@ -163,7 +164,8 @@ namespace Rowlan.Fullscreen
             ToggleKey = (Key)EditorGUILayout.EnumPopup("Toggle Fullscreen", ToggleKey);
             ExitKey = (Key)EditorGUILayout.EnumPopup("Exit Fullscreen", ExitKey);
             ResetKey = (Key)EditorGUILayout.EnumPopup(
-                new GUIContent("Reset Layout", "Force-exit fullscreen and restore the default editor layout. Safety fallback if the editor becomes stuck."),
+                new GUIContent("Reset Layout",
+                    "Force-exit fullscreen and restore the default editor layout. Safety fallback if the editor becomes stuck."),
                 ResetKey);
 
             EditorGUILayout.Space(10);
@@ -171,27 +173,27 @@ namespace Rowlan.Fullscreen
 
             AutoFullscreen = EditorGUILayout.Toggle("Fullscreen On Play", AutoFullscreen);
             VSync = EditorGUILayout.Toggle(
-                new GUIContent("VSync", "Enable VSync during fullscreen. Disable to uncap frame rate for performance testing."),
+                new GUIContent("VSync",
+                    "Enable VSync during fullscreen. Disable to uncap frame rate for performance testing."),
                 VSync);
             HideCursor = EditorGUILayout.Toggle(
-                new GUIContent("Hide Cursor", "Hide the mouse cursor during fullscreen. Useful for gamepad-only or presentation scenarios."),
+                new GUIContent("Hide Cursor",
+                    "Hide the mouse cursor during fullscreen. Useful for gamepad-only or presentation scenarios."),
                 HideCursor);
             DebugLogging = EditorGUILayout.Toggle(
-                new GUIContent("Debug Logging", "Print log messages to the console when entering and exiting fullscreen."),
+                new GUIContent("Debug Logging",
+                    "Print log messages to the console when entering and exiting fullscreen."),
                 DebugLogging);
 
             EditorGUI.EndDisabledGroup();
 
             EditorGUILayout.Space(20);
 
-            if (UnityEngine.GUILayout.Button("Reset to Defaults", UnityEngine.GUILayout.Width(150)))
-            {
-                ResetToDefaults();
-            }
+            if (GUILayout.Button("Reset to Defaults", GUILayout.Width(150))) ResetToDefaults();
         }
 
         /// <summary>
-        /// Resets all preferences to their default values.
+        ///     Resets all preferences to their default values.
         /// </summary>
         private static void ResetToDefaults()
         {

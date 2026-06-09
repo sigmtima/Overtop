@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerIdleState : BaseState<PlayerContext>
@@ -18,10 +17,8 @@ public class PlayerIdleState : BaseState<PlayerContext>
 
     public override void Update()
     {
-        if (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
-        {
+        if (Context.InputManager.MoveInput.x != 0 || Context.InputManager.MoveInput.y != 0)
             Context.Controller.ChangeState(new PlayerMoveState(Context));
-        }
     }
 
     public override void FixedUpdate()

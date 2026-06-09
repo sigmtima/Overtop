@@ -1,26 +1,23 @@
 using ShopScripts;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class BalanceUI : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI balanceText;
 
- [SerializeField] private TextMeshProUGUI balanceText;
- 
+    public void OnEnable()
+    {
+        WalletManager.Instance.OnBalanceChanged += UpdateBalance;
+    }
 
- public void UpdateBalance(float money)
- {
-  balanceText.text = money.ToString("N0");
-  
- }
+    public void OnDisable()
+    {
+        WalletManager.Instance.OnBalanceChanged -= UpdateBalance;
+    }
 
- public void OnEnable()
- {
-  ShopScripts.WalletManager.Instance.OnBalanceChanged += UpdateBalance;
- }
-
- public void OnDisable()
- {
-  ShopScripts.WalletManager.Instance.OnBalanceChanged -= UpdateBalance;
- }
+    public void UpdateBalance(float money)
+    {
+        balanceText.text = money.ToString("N0");
+    }
 }

@@ -3,12 +3,10 @@ using UnityEngine;
 
 public class CoinItem : BaseItem
 {
-  [SerializeField] private CoinData coinData;
+    [SerializeField] private CoinData coinData;
 
-
-  public override void Pickup()
-  {
-
-    WalletManager.Instance.AddMoney(coinData.value);
-  }
+    public override void Pickup()
+    {
+        WalletManager.Instance.AddMoney(coinData.value);
+    }
 }

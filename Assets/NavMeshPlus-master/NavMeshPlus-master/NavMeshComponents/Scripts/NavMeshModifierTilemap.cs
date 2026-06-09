@@ -1,7 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 using NavMeshPlus.Extensions;
+using UnityEngine;
 using UnityEngine.Tilemaps;
 
 //***********************************************************************************
@@ -17,36 +18,23 @@ namespace NavMeshPlus.Components
     [ExecuteInEditMode]
     public class NavMeshModifierTilemap : MonoBehaviour
     {
-        [System.Serializable]
-        public struct TileModifier
-        {
-            public TileBase tile;
-            public bool overrideArea;
-            [NavMeshArea] public int area;
-        }
-
-        private class MatchingTileComparator : IEqualityComparer<TileModifier>
-        {
-            public static readonly IEqualityComparer<TileModifier> Instance = new MatchingTileComparator();
-            public bool Equals(TileModifier a, TileModifier b) => a.tile == b.tile;
-            public int GetHashCode(TileModifier tileModifier) => tileModifier.GetHashCode();
-        }
-
         // List of agent types the modifier is applied for.
         // Special values: empty == None, m_AffectedAgents[0] =-1 == All.
-        [SerializeField]
-        List<int> m_AffectedAgents = new List<int>(new int[] { -1 });    // Default value is All
+        [SerializeField] private List<int> m_AffectedAgents = new(new[] { -1 }); // Default value is All
 
-        [SerializeField]
-        List<TileModifier> m_TileModifiers = new List<TileModifier>();
+        [SerializeField] private List<TileModifier> m_TileModifiers = new();
 
         private Dictionary<TileBase, TileModifier> m_ModifierMap;
 
-        public Dictionary<TileBase, TileModifier> GetModifierMap() => m_TileModifiers.Where(mod => mod.tile != null).Distinct(MatchingTileComparator.Instance).ToDictionary(mod => mod.tile);
-
-        void OnEnable()
+        private void OnEnable()
         {
             CacheModifiers();
+        }
+
+        public Dictionary<TileBase, TileModifier> GetModifierMap()
+        {
+            return m_TileModifiers.Where(mod => mod.tile != null).Distinct(MatchingTileComparator.Instance)
+                .ToDictionary(mod => mod.tile);
         }
 
         public void CacheModifiers()
@@ -63,10 +51,7 @@ namespace NavMeshPlus.Components
 
         public virtual bool TryGetTileModifier(Vector3Int coords, Tilemap tilemap, out TileModifier modifier)
         {
-            if (tilemap.GetTile(coords) is TileBase tileBase)
-            {
-                return m_ModifierMap.TryGetValue(tileBase, out modifier);
-            }
+            if (tilemap.GetTile(coords) is TileBase tileBase) return m_ModifierMap.TryGetValue(tileBase, out modifier);
             modifier = new TileModifier();
             return false;
         }
@@ -78,6 +63,29 @@ namespace NavMeshPlus.Components
             if (m_AffectedAgents[0] == -1)
                 return true;
             return m_AffectedAgents.IndexOf(agentTypeID) != -1;
+        }
+
+        [Serializable]
+        public struct TileModifier
+        {
+            public TileBase tile;
+            public bool overrideArea;
+            [NavMeshArea] public int area;
+        }
+
+        private class MatchingTileComparator : IEqualityComparer<TileModifier>
+        {
+            public static readonly IEqualityComparer<TileModifier> Instance = new MatchingTileComparator();
+
+            public bool Equals(TileModifier a, TileModifier b)
+            {
+                return a.tile == b.tile;
+            }
+
+            public int GetHashCode(TileModifier tileModifier)
+            {
+                return tileModifier.GetHashCode();
+            }
         }
     }
 }

@@ -1,67 +1,68 @@
 #define NAVMESHCOMPONENTS_SHOW_NAVMESHDATA_REF
 
 using System.Linq;
-using UnityEditor.IMGUI.Controls;
-using UnityEditorInternal;
-using UnityEngine.AI;
-using UnityEngine;
+using System.Reflection;
 using UnityEditor;
 using UnityEditor.AI;
-using System.Reflection;
+using UnityEditor.IMGUI.Controls;
+using UnityEditorInternal;
+using UnityEngine;
+using UnityEngine.AI;
+using NavMeshBuilder = UnityEngine.AI.NavMeshBuilder;
 
 namespace NavMeshPlus.Components.Editors
 {
     [CanEditMultipleObjects]
     [CustomEditor(typeof(NavMeshSurface))]
-    class NavMeshSurfaceEditor : Editor
+    internal class NavMeshSurfaceEditor : Editor
     {
-        SerializedProperty m_AgentTypeID;
-        SerializedProperty m_BuildHeightMesh;
-        SerializedProperty m_Center;
-        SerializedProperty m_CollectObjects;
-        SerializedProperty m_DefaultArea;
-        SerializedProperty m_LayerMask;
-        SerializedProperty m_OverrideTileSize;
-        SerializedProperty m_OverrideVoxelSize;
-        SerializedProperty m_Size;
-        SerializedProperty m_TileSize;
-        SerializedProperty m_UseGeometry;
-        SerializedProperty m_VoxelSize;
-        SerializedProperty m_MinRegionArea;
-        SerializedProperty m_HideEditorLogs;
+        private SerializedProperty m_AgentTypeID;
+        private SerializedProperty m_BuildHeightMesh;
+        private SerializedProperty m_Center;
+        private SerializedProperty m_CollectObjects;
+        private SerializedProperty m_DefaultArea;
+        private SerializedProperty m_LayerMask;
+        private SerializedProperty m_OverrideTileSize;
+        private SerializedProperty m_OverrideVoxelSize;
+        private SerializedProperty m_Size;
+        private SerializedProperty m_TileSize;
+        private SerializedProperty m_UseGeometry;
+        private SerializedProperty m_VoxelSize;
+        private SerializedProperty m_MinRegionArea;
+        private SerializedProperty m_HideEditorLogs;
 
 #if NAVMESHCOMPONENTS_SHOW_NAVMESHDATA_REF
-        SerializedProperty m_NavMeshData;
+        private SerializedProperty m_NavMeshData;
 #endif
-        class Styles
+        private class Styles
         {
-            public readonly GUIContent m_LayerMask = new GUIContent("Include Layers");
-			public readonly GUIContent m_MinRegionArea = new GUIContent("Minimum Region Area");
-            public readonly GUIContent m_ShowInputGeom = new GUIContent("Show Input Geom");
-            public readonly GUIContent m_ShowVoxels = new GUIContent("Show Voxels");
-            public readonly GUIContent m_ShowRegions = new GUIContent("Show Regions");
-            public readonly GUIContent m_ShowRawContours = new GUIContent("Show Raw Contours");
-            public readonly GUIContent m_ShowContours = new GUIContent("Show Contours");
-            public readonly GUIContent m_ShowPolyMesh = new GUIContent("Show Poly Mesh");
-            public readonly GUIContent m_ShowPolyMeshDetail = new GUIContent("Show Poly Mesh Detail");
+            public readonly GUIContent m_LayerMask = new("Include Layers");
+            public readonly GUIContent m_MinRegionArea = new("Minimum Region Area");
+            public readonly GUIContent m_ShowContours = new("Show Contours");
+            public readonly GUIContent m_ShowInputGeom = new("Show Input Geom");
+            public readonly GUIContent m_ShowPolyMesh = new("Show Poly Mesh");
+            public readonly GUIContent m_ShowPolyMeshDetail = new("Show Poly Mesh Detail");
+            public readonly GUIContent m_ShowRawContours = new("Show Raw Contours");
+            public readonly GUIContent m_ShowRegions = new("Show Regions");
+            public readonly GUIContent m_ShowVoxels = new("Show Voxels");
         }
 
-        static Styles s_Styles;
+        private static Styles s_Styles;
 
-        static bool s_ShowDebugOptions;
+        private static bool s_ShowDebugOptions;
 
-        static Color s_HandleColor = new Color(127f, 214f, 244f, 100f) / 255;
-        static Color s_HandleColorSelected = new Color(127f, 214f, 244f, 210f) / 255;
-        static Color s_HandleColorDisabled = new Color(127f * 0.75f, 214f * 0.75f, 244f * 0.75f, 100f) / 255;
+        private static readonly Color s_HandleColor = new Color(127f, 214f, 244f, 100f) / 255;
+        private static readonly Color s_HandleColorSelected = new Color(127f, 214f, 244f, 210f) / 255;
 
-        BoxBoundsHandle m_BoundsHandle = new BoxBoundsHandle();
+        private static readonly Color s_HandleColorDisabled =
+            new Color(127f * 0.75f, 214f * 0.75f, 244f * 0.75f, 100f) / 255;
 
-        bool editingCollider
-        {
-            get { return EditMode.editMode == EditMode.SceneViewEditMode.Collider && EditMode.IsOwner(this); }
-        }
+        private readonly BoxBoundsHandle m_BoundsHandle = new();
 
-        void OnEnable()
+        private bool editingCollider =>
+            EditMode.editMode == EditMode.SceneViewEditMode.Collider && EditMode.IsOwner(this);
+
+        private void OnEnable()
         {
             m_AgentTypeID = serializedObject.FindProperty("m_AgentTypeID");
             m_BuildHeightMesh = serializedObject.FindProperty("m_BuildHeightMesh");
@@ -94,7 +95,7 @@ namespace NavMeshPlus.Components.Editors
         }
 #endif
 
-        Bounds GetBounds()
+        private Bounds GetBounds()
         {
             var navSurface = (NavMeshSurface)target;
             return new Bounds(navSurface.transform.position, navSurface.size);
@@ -113,8 +114,9 @@ namespace NavMeshPlus.Components.Editors
             {
                 // Draw image
                 const float diagramHeight = 80.0f;
-                Rect agentDiagramRect = EditorGUILayout.GetControlRect(false, diagramHeight);
-                NavMeshEditorHelpers.DrawAgentDiagram(agentDiagramRect, bs.agentRadius, bs.agentHeight, bs.agentClimb, bs.agentSlope);
+                var agentDiagramRect = EditorGUILayout.GetControlRect(false, diagramHeight);
+                NavMeshEditorHelpers.DrawAgentDiagram(agentDiagramRect, bs.agentRadius, bs.agentHeight, bs.agentClimb,
+                    bs.agentSlope);
             }
 
             EditorGUILayout.PropertyField(m_AgentTypeID);
@@ -153,7 +155,8 @@ namespace NavMeshPlus.Components.Editors
                 // Override voxel size.
                 EditorGUILayout.PropertyField(m_OverrideVoxelSize);
 
-                using (new EditorGUI.DisabledScope(!m_OverrideVoxelSize.boolValue || m_OverrideVoxelSize.hasMultipleDifferentValues))
+                using (new EditorGUI.DisabledScope(!m_OverrideVoxelSize.boolValue ||
+                                                   m_OverrideVoxelSize.hasMultipleDifferentValues))
                 {
                     EditorGUI.indentLevel++;
 
@@ -163,19 +166,27 @@ namespace NavMeshPlus.Components.Editors
                     {
                         if (!m_AgentTypeID.hasMultipleDifferentValues)
                         {
-                            float voxelsPerRadius = m_VoxelSize.floatValue > 0.0f ? (bs.agentRadius / m_VoxelSize.floatValue) : 0.0f;
-                            EditorGUILayout.LabelField(" ", voxelsPerRadius.ToString("0.00") + " voxels per agent radius", EditorStyles.miniLabel);
+                            var voxelsPerRadius = m_VoxelSize.floatValue > 0.0f
+                                ? bs.agentRadius / m_VoxelSize.floatValue
+                                : 0.0f;
+                            EditorGUILayout.LabelField(" ",
+                                voxelsPerRadius.ToString("0.00") + " voxels per agent radius", EditorStyles.miniLabel);
                         }
+
                         if (m_OverrideVoxelSize.boolValue)
-                            EditorGUILayout.HelpBox("Voxel size controls how accurately the navigation mesh is generated from the level geometry. A good voxel size is 2-4 voxels per agent radius. Making voxel size smaller will increase build time.", MessageType.None);
+                            EditorGUILayout.HelpBox(
+                                "Voxel size controls how accurately the navigation mesh is generated from the level geometry. A good voxel size is 2-4 voxels per agent radius. Making voxel size smaller will increase build time.",
+                                MessageType.None);
                     }
+
                     EditorGUI.indentLevel--;
                 }
 
                 // Override tile size
                 EditorGUILayout.PropertyField(m_OverrideTileSize);
 
-                using (new EditorGUI.DisabledScope(!m_OverrideTileSize.boolValue || m_OverrideTileSize.hasMultipleDifferentValues))
+                using (new EditorGUI.DisabledScope(!m_OverrideTileSize.boolValue ||
+                                                   m_OverrideTileSize.hasMultipleDifferentValues))
                 {
                     EditorGUI.indentLevel++;
 
@@ -183,15 +194,16 @@ namespace NavMeshPlus.Components.Editors
 
                     if (!m_TileSize.hasMultipleDifferentValues && !m_VoxelSize.hasMultipleDifferentValues)
                     {
-                        float tileWorldSize = m_TileSize.intValue * m_VoxelSize.floatValue;
-                        EditorGUILayout.LabelField(" ", tileWorldSize.ToString("0.00") + " world units", EditorStyles.miniLabel);
+                        var tileWorldSize = m_TileSize.intValue * m_VoxelSize.floatValue;
+                        EditorGUILayout.LabelField(" ", tileWorldSize.ToString("0.00") + " world units",
+                            EditorStyles.miniLabel);
                     }
 
                     if (!m_OverrideTileSize.hasMultipleDifferentValues)
-                    {
                         if (m_OverrideTileSize.boolValue)
-                            EditorGUILayout.HelpBox("Tile size controls the how local the changes to the world are (rebuild or carve). Small tile size allows more local changes, while potentially generating more data overall.", MessageType.None);
-                    }
+                            EditorGUILayout.HelpBox(
+                                "Tile size controls the how local the changes to the world are (rebuild or carve). Small tile size allows more local changes, while potentially generating more data overall.",
+                                MessageType.None);
                     EditorGUI.indentLevel--;
                 }
 
@@ -222,19 +234,14 @@ namespace NavMeshPlus.Components.Editors
                 // It means the validation is not checking vertical voxel limit correctly when the surface is set to something else than "in volume".
                 var bounds = new Bounds(Vector3.zero, Vector3.zero);
                 if (navSurface.collectObjects == CollectObjects.Volume)
-                {
                     bounds = new Bounds(navSurface.center, navSurface.size);
-                }
 
                 var errors = settings.ValidationReport(bounds);
                 if (errors.Length > 0)
                 {
                     if (multipleTargets)
                         EditorGUILayout.LabelField(navSurface.name);
-                    foreach (var err in errors)
-                    {
-                        EditorGUILayout.HelpBox(err, MessageType.Warning);
-                    }
+                    foreach (var err in errors) EditorGUILayout.HelpBox(err, MessageType.Warning);
                     GUILayout.BeginHorizontal();
                     GUILayout.Space(EditorGUIUtility.labelWidth);
                     if (GUILayout.Button("Open Agent Settings...", EditorStyles.miniButton))
@@ -251,7 +258,8 @@ namespace NavMeshPlus.Components.Editors
             var nmdRect = EditorGUILayout.GetControlRect(true, EditorGUIUtility.singleLineHeight);
 
             EditorGUI.BeginProperty(nmdRect, GUIContent.none, m_NavMeshData);
-            var rectLabel = EditorGUI.PrefixLabel(nmdRect, GUIUtility.GetControlID(FocusType.Passive), new GUIContent(m_NavMeshData.displayName));
+            var rectLabel = EditorGUI.PrefixLabel(nmdRect, GUIUtility.GetControlID(FocusType.Passive),
+                new GUIContent(m_NavMeshData.displayName));
             EditorGUI.EndProperty();
 
             using (new EditorGUI.DisabledScope(true))
@@ -271,17 +279,14 @@ namespace NavMeshPlus.Components.Editors
                     SceneView.RepaintAll();
                 }
 
-                if (GUILayout.Button("Bake"))
-                {
-                    NavMeshAssetManager.instance.StartBakingSurfaces(targets);
-                }
+                if (GUILayout.Button("Bake")) NavMeshAssetManager.instance.StartBakingSurfaces(targets);
 
                 GUILayout.EndHorizontal();
             }
 
             // Show progress for the selected targets
             var bakeOperations = NavMeshAssetManager.instance.GetBakeOperations();
-            for (int i = bakeOperations.Count - 1; i >= 0; --i)
+            for (var i = bakeOperations.Count - 1; i >= 0; --i)
             {
                 if (!targets.Contains(bakeOperations[i].surface))
                     continue;
@@ -302,7 +307,7 @@ namespace NavMeshPlus.Components.Editors
                 if (GUILayout.Button("Cancel", EditorStyles.miniButton))
                 {
                     var bakeData = bakeOperations[i].bakeData;
-                    UnityEngine.AI.NavMeshBuilder.Cancel(bakeData);
+                    NavMeshBuilder.Cancel(bakeData);
                     bakeOperations.RemoveAt(i);
                 }
 
@@ -316,16 +321,17 @@ namespace NavMeshPlus.Components.Editors
 
 #if UNITY_2022_2_OR_NEWER
         [DrawGizmo(GizmoType.InSelectionHierarchy | GizmoType.Active | GizmoType.Pickable)]
-        static void RenderGizmoSelected(NavMeshSurface navSurface, GizmoType gizmoType)
+        private static void RenderGizmoSelected(NavMeshSurface navSurface, GizmoType gizmoType)
         {
-             //navSurface.navMeshDataInstance.FlagAsInSelectionHierarchy();
-            var method = navSurface.navMeshDataInstance.GetType().GetMethod("FlagAsInSelectionHierarchy", BindingFlags.NonPublic | BindingFlags.Instance);
+            //navSurface.navMeshDataInstance.FlagAsInSelectionHierarchy();
+            var method = navSurface.navMeshDataInstance.GetType().GetMethod("FlagAsInSelectionHierarchy",
+                BindingFlags.NonPublic | BindingFlags.Instance);
             method.Invoke(navSurface.navMeshDataInstance, null);
             RenderBoxGizmo(navSurface, gizmoType, true);
         }
 
         [DrawGizmo(GizmoType.NotInSelectionHierarchy | GizmoType.Pickable)]
-        static void RenderGizmoNotSelected(NavMeshSurface navSurface, GizmoType gizmoType)
+        private static void RenderGizmoNotSelected(NavMeshSurface navSurface, GizmoType gizmoType)
         {
             RenderBoxGizmo(navSurface, gizmoType, false);
         }
@@ -346,7 +352,7 @@ namespace NavMeshPlus.Components.Editors
         }
 #endif
 
-        static void RenderBoxGizmo(NavMeshSurface navSurface, GizmoType gizmoType, bool selected)
+        private static void RenderBoxGizmo(NavMeshSurface navSurface, GizmoType gizmoType, bool selected)
         {
             var color = selected ? s_HandleColorSelected : s_HandleColor;
             if (!navSurface.enabled)
@@ -387,7 +393,7 @@ namespace NavMeshPlus.Components.Editors
             Gizmos.DrawIcon(navSurface.transform.position, "NavMeshSurface Icon", true);
         }
 
-        void OnSceneGUI()
+        private void OnSceneGUI()
         {
             if (!editingCollider)
                 return;
@@ -405,8 +411,8 @@ namespace NavMeshPlus.Components.Editors
                 if (EditorGUI.EndChangeCheck())
                 {
                     Undo.RecordObject(navSurface, "Modified NavMesh Surface");
-                    Vector3 center = m_BoundsHandle.center;
-                    Vector3 size = m_BoundsHandle.size;
+                    var center = m_BoundsHandle.center;
+                    var size = m_BoundsHandle.size;
                     navSurface.center = center;
                     navSurface.size = size;
                     EditorUtility.SetDirty(target);

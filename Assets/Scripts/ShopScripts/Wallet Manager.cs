@@ -1,16 +1,19 @@
+using System;
 using UnityEngine;
 
 namespace ShopScripts
 {
     public class WalletManager : MonoBehaviour
     {
-        public event System.Action<float> OnBalanceChanged;
-        public float playerBalance;
         public static WalletManager Instance;
-        void Awake()
+        public float playerBalance;
+
+        private void Awake()
         {
             Instance = this;
         }
+
+        public event Action<float> OnBalanceChanged;
 
         public void AddMoney(float amount)
         {

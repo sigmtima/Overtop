@@ -1,47 +1,38 @@
 using System;
 using UnityEngine;
 using UnityEngine.AI;
-using System.Collections;
 using UnityEngine.Serialization;
 using Weapon;
-using Random = UnityEngine.Random;
-
 
 namespace EnemyAI
 {
-
-
     public class EnemyController : StateMachine<EnemyContext>, ITakeDamage
     {
-
-        private Rigidbody2D _rb;
         [SerializeField] private Animator enemyAnimator;
 
         [FormerlySerializedAs("PlayerTransform")]
         public Transform playerTransform;
 
-        private EnemyContext _context;
         [field: SerializeField] public EnemyData Data { get; private set; }
         public NavMeshAgent agent;
-        private float _currentHealth;
-
-        public static event System.Action<Vector3> OnEnemyDeath;
-         [SerializeField] private LayerMask playerMask;
-        private Vector2 _currentTarget;
+        [SerializeField] private LayerMask playerMask;
 
         [SerializeField] private WeaponController weaponController;
 
-      public EnemyChaseState enemyChaseState { get; private set; }
-      public EnemyWanderState enemyWanderState  { get; private set; }
+        private EnemyContext _context;
+        private float _currentHealth;
+        private Vector2 _currentTarget;
+        private Rigidbody2D _rb;
+
+        public EnemyChaseState enemyChaseState { get; private set; }
+        public EnemyWanderState enemyWanderState { get; private set; }
+
         public void Awake()
         {
-         
             _currentHealth = Data.enemyHealth;
             agent.updateRotation = false;
             agent.updateUpAxis = false;
 
-            
-            
             _rb = GetComponent<Rigidbody2D>();
             _context = new EnemyContext(this, _rb, enemyAnimator, playerTransform, agent);
 
@@ -54,42 +45,32 @@ namespace EnemyAI
             ChangeState(enemyWanderState);
         }
 
-
-        public void AttackPlayer()
-        {
-            
-            Vector2 directrion = ((Vector2)playerTransform.position - (Vector2)transform.position).normalized;
-
-            weaponController.TryShoot(directrion);
-
-        }
-
-        public void ApproachPlayer()
-        {
-
-            GetCurrentTarget();
-            agent.SetDestination(_currentTarget);
-            
-
-        }
-
         public void TakeDamage(float damage)
         {
             Debug.Log("Мне больно" + damage);
 
             _currentHealth -= damage;
-            if (_currentHealth <= 0)
-            {
-                Die();
-            }
+            if (_currentHealth <= 0) Die();
         }
 
+        public static event Action<Vector3> OnEnemyDeath;
 
+        public void AttackPlayer()
+        {
+            var directrion = ((Vector2)playerTransform.position - (Vector2)transform.position).normalized;
+
+            weaponController.TryShoot(directrion);
+        }
+
+        public void ApproachPlayer()
+        {
+            GetCurrentTarget();
+            agent.SetDestination(_currentTarget);
+        }
 
         public void CheckPlayer()
         {
-
-            Collider2D hit = Physics2D.OverlapCircle(transform.position,
+            var hit = Physics2D.OverlapCircle(transform.position,
                 _context.Controller.Data.viewRadiusie, playerMask);
             if (hit != null)
             {
@@ -98,34 +79,18 @@ namespace EnemyAI
                     _context.Controller.playerTransform.position, ~0);
 
                 if (rayHit.collider != null)
-                {
-
-
                     if (rayHit.collider.CompareTag("Player"))
-                    {
-                      
                         _context.Controller.ChangeState(enemyChaseState);
-                    }
-                }
-
-
-
-
             }
         }
 
-
         private void Die()
         {
-         
             if (_currentHealth <= 0)
             {
-          
-          
                 OnEnemyDeath?.Invoke(gameObject.transform.position);
                 Destroy(gameObject);
             }
-
         }
 
         public void GetCurrentTarget()
@@ -133,13 +98,8 @@ namespace EnemyAI
             Vector2 playerPos = playerTransform.position;
             Vector2 enemyPos = transform.position;
 
-
-            Vector2 target = playerPos + (enemyPos - playerPos).normalized * Data.attackRadius;
+            var target = playerPos + (enemyPos - playerPos).normalized * Data.attackRadius;
             _currentTarget = target;
         }
     }
-
 }
-  
-
-

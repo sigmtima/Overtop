@@ -8,12 +8,11 @@ using UnityEngine;
 namespace Rowlan.Fullscreen
 {
     /// <summary>
-    /// Windows-specific fullscreen logic.
-    /// Uses Win32 MonitorFromWindow to detect which monitor the popup is on,
-    /// then strips window borders and forces it topmost covering the full monitor.
-    ///
-    /// The window handle (HWND) is persisted in SessionState so that cleanup
-    /// can remove the topmost flag even after a domain reload wipes static fields.
+    ///     Windows-specific fullscreen logic.
+    ///     Uses Win32 MonitorFromWindow to detect which monitor the popup is on,
+    ///     then strips window borders and forces it topmost covering the full monitor.
+    ///     The window handle (HWND) is persisted in SessionState so that cleanup
+    ///     can remove the topmost flag even after a domain reload wipes static fields.
     /// </summary>
     public static class FullscreenPlatformWindows
     {
@@ -72,8 +71,8 @@ namespace Rowlan.Fullscreen
 
         private const uint MONITOR_DEFAULTTONEAREST = 2;
 
-        private static readonly IntPtr HWND_TOPMOST = new IntPtr(-1);
-        private static readonly IntPtr HWND_NOTOPMOST = new IntPtr(-2);
+        private static readonly IntPtr HWND_TOPMOST = new(-1);
+        private static readonly IntPtr HWND_NOTOPMOST = new(-2);
 
         #endregion
 
@@ -88,10 +87,10 @@ namespace Rowlan.Fullscreen
         #region Public API
 
         /// <summary>
-        /// Strips remaining border styles from the popup window, uses MonitorFromWindow
-        /// to detect which monitor the popup is on, and forces it topmost covering the
-        /// full monitor rect (including the taskbar area).
-        /// Persists the HWND to SessionState for domain-reload recovery.
+        ///     Strips remaining border styles from the popup window, uses MonitorFromWindow
+        ///     to detect which monitor the popup is on, and forces it topmost covering the
+        ///     full monitor rect (including the taskbar area).
+        ///     Persists the HWND to SessionState for domain-reload recovery.
         /// </summary>
         /// <param name="popup">The fullscreen popup EditorWindow.</param>
         public static void OnEnterFullscreen(EditorWindow popup)
@@ -117,7 +116,7 @@ namespace Rowlan.Fullscreen
                     SessionState.SetInt(SessionKeyHwnd, (int)(long)popupHwnd);
 
                     // Strip any remaining border styles
-                    int style = GetWindowLong(popupHwnd, GWL_STYLE);
+                    var style = GetWindowLong(popupHwnd, GWL_STYLE);
                     style &= ~WS_BORDER;
                     style &= ~WS_CAPTION;
                     style &= ~WS_THICKFRAME;
@@ -125,13 +124,13 @@ namespace Rowlan.Fullscreen
 
                     // Ask the OS which monitor this window is on and get its full rect
                     int targetX = 0, targetY = 0;
-                    int targetW = Screen.currentResolution.width;
-                    int targetH = Screen.currentResolution.height;
+                    var targetW = Screen.currentResolution.width;
+                    var targetH = Screen.currentResolution.height;
 
-                    IntPtr hMonitor = MonitorFromWindow(popupHwnd, MONITOR_DEFAULTTONEAREST);
+                    var hMonitor = MonitorFromWindow(popupHwnd, MONITOR_DEFAULTTONEAREST);
                     if (hMonitor != IntPtr.Zero)
                     {
-                        MONITORINFO mi = new MONITORINFO();
+                        var mi = new MONITORINFO();
                         mi.cbSize = Marshal.SizeOf(typeof(MONITORINFO));
 
                         if (GetMonitorInfo(hMonitor, ref mi))
@@ -142,7 +141,7 @@ namespace Rowlan.Fullscreen
                             targetH = mi.rcMonitor.bottom - mi.rcMonitor.top;
 
                             if (FullscreenSettings.DebugLogging)
-                                Debug.Log($"[Fullscreen/Win] MonitorFromWindow: " +
+                                Debug.Log("[Fullscreen/Win] MonitorFromWindow: " +
                                           $"origin=({targetX},{targetY}), size={targetW}x{targetH}");
                         }
                     }
@@ -156,20 +155,20 @@ namespace Rowlan.Fullscreen
         }
 
         /// <summary>
-        /// Removes the topmost flag from the popup window so it no longer covers the taskbar.
-        /// Checks both the in-memory handle and the persisted SessionState handle to ensure
-        /// cleanup works even after a domain reload wiped the static field.
-        /// Safe to call multiple times — IsWindow validates the handle before use.
+        ///     Removes the topmost flag from the popup window so it no longer covers the taskbar.
+        ///     Checks both the in-memory handle and the persisted SessionState handle to ensure
+        ///     cleanup works even after a domain reload wiped the static field.
+        ///     Safe to call multiple times — IsWindow validates the handle before use.
         /// </summary>
         public static void OnExitFullscreen()
         {
             // Try the in-memory handle first
-            IntPtr hwndToRestore = popupHwnd;
+            var hwndToRestore = popupHwnd;
 
             // If the in-memory handle is gone (domain reload), recover from SessionState
             if (hwndToRestore == IntPtr.Zero)
             {
-                int persisted = SessionState.GetInt(SessionKeyHwnd, 0);
+                var persisted = SessionState.GetInt(SessionKeyHwnd, 0);
                 if (persisted != 0)
                     hwndToRestore = new IntPtr(persisted);
             }
@@ -180,9 +179,7 @@ namespace Rowlan.Fullscreen
                 // After domain reload the window may have been destroyed by Unity,
                 // in which case the handle is stale and we should skip the call.
                 if (IsWindow(hwndToRestore))
-                {
                     SetWindowPos(hwndToRestore, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
-                }
 
                 popupHwnd = IntPtr.Zero;
                 SessionState.SetInt(SessionKeyHwnd, 0);

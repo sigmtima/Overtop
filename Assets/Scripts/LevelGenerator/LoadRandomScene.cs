@@ -6,33 +6,26 @@ namespace LevelManagement
 {
     public class LevelManager : MonoBehaviour
     {
-        private int _totalNumberOfScenes;
-        private List<int> _originalScenes = new();
-        private List<int> _activeScenes = new();
-        private int _loadedScenesCount;
-        [SerializeField] private int scenesPerSpecialScene = 3;
-        [SerializeField]  private int specialSceneIndex = 1;
         public static LevelManager Instance;
-
+        [SerializeField] private int scenesPerSpecialScene = 3;
+        [SerializeField] private int specialSceneIndex = 1;
+        private readonly List<int> _activeScenes = new();
+        private int _loadedScenesCount;
+        private readonly List<int> _originalScenes = new();
+        private int _totalNumberOfScenes;
 
         private void Awake()
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
             _totalNumberOfScenes = SceneManager.sceneCountInBuildSettings;
-            for (int i = 2; i <_totalNumberOfScenes; i++) 
+            for (var i = 2; i < _totalNumberOfScenes; i++)
             {
-                
-                
-                    _originalScenes.Add(i);
-                    _activeScenes.Add(i);
-                    
-                
+                _originalScenes.Add(i);
+                _activeScenes.Add(i);
             }
-
-           
-
         }
+
         public void LoadNextScene()
         {
             if (_loadedScenesCount == scenesPerSpecialScene)
@@ -41,25 +34,20 @@ namespace LevelManagement
                 _loadedScenesCount = 0;
                 return;
             }
+
             if (_loadedScenesCount < scenesPerSpecialScene)
             {
-                if (_activeScenes.Count == 0)
-                {
-                    _activeScenes.AddRange(_originalScenes);
-                }
+                if (_activeScenes.Count == 0) _activeScenes.AddRange(_originalScenes);
                 if (_activeScenes.Count != 0)
                 {
                     _loadedScenesCount++;
-                    int currentSceneIndex = Random.Range(0, _activeScenes.Count);
+                    var currentSceneIndex = Random.Range(0, _activeScenes.Count);
                     SceneManager.LoadScene(_activeScenes[currentSceneIndex]);
                     _activeScenes.RemoveAt(currentSceneIndex);
                 }
-
-              
             }
-
         }
-        
+
         /*Логика рандомной генерации
          НАМ нужно записать все наши сцены в List<> или Stack<>
          Сам метод рандомной генерации
