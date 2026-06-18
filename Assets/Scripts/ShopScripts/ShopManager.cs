@@ -1,17 +1,18 @@
 using Core;
+using Player;
 using ShopScripts;
 using UnityEngine;
 
 public class ShopManager : MonoBehaviour
 {
-    [SerializeField] private PlayerController playerController;
+    [SerializeField] private PlayerData playerData;
 
     public void BuyUpgrade(BaseUpgrade upgrade)
     {
-        if (WalletManager.Instance.playerBalance >= upgrade.CalculateNextPrice())
+        if (WalletManager.Instance.playerBalance >= upgrade.price)
         {
-            WalletManager.Instance.RemoveMoney(upgrade.Price);
-            upgrade.LevelUp(playerController);
+            WalletManager.Instance.RemoveMoney(upgrade.price);
+            upgrade.LevelUp(playerData);
         }
     }
 }

@@ -1,13 +1,14 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
-namespace EnemyAI
+namespace Enemy_AI
 {
     [CreateAssetMenu(fileName = "EnemyData")]
     public class EnemyData : ScriptableObject
     {
         public float minPatrolRadius;
         public float maxPatrolRadius;
-        public float viewRadiusie;
+        [FormerlySerializedAs("viewRadiusie")] public float viewRadius;
         public float attackRadius;
         public float minMoveInterval;
         public float maxMoveInterval;

@@ -2,9 +2,9 @@ using UnityEngine;
 
 public abstract class BaseItem : MonoBehaviour
 {
-    public virtual void OnTriggerEnter(Collider other)
+    public virtual void OnTriggerEnter2D(Collider2D other)
     {
-        if (CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             Pickup();
             gameObject.SetActive(false);

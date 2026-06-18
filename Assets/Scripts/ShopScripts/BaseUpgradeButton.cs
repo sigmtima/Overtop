@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ShopScripts
 {
-    public class UpgradeButton : MonoBehaviour
+    public class BaseUpgradeButton : MonoBehaviour
 
     {
         [SerializeField] private BaseUpgrade upgrade;
@@ -13,17 +13,23 @@ namespace ShopScripts
         [SerializeField] private TextMeshProUGUI levelText;
         [SerializeField] private ShopManager shopManager;
 
-        public void Start()
+        public virtual void Start()
         {
             upgrade.Initialize(upgradeData);
-
-            levelText.text = $"{upgrade.CurrentLevel}";
-            priceText.text = $"{upgrade.Price}";
+            
+            levelText.text = "Lvl " + upgrade.CurrentLevel;
+            
+            priceText.text = "Price " + upgrade.price;
         }
 
         public void TryBuyUpgrade()
         {
             shopManager.BuyUpgrade(upgrade);
+            
+            levelText.text = "Lvl " + upgrade.CurrentLevel;
+            
+            priceText.text = "Price " + upgrade.price;
         }
+        
     }
 }

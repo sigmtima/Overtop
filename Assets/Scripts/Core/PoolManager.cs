@@ -1,15 +1,22 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Weapon;
 
 public class PoolManager : MonoBehaviour
 {
-    [SerializeField] private BulletsPool playerBulletPool;
-    [SerializeField] private BulletsPool enemyBulletPool;
+    [SerializeField] private BulletPool playerBulletPool;
+    [SerializeField] private BulletPool enemyBulletPool;
     public static PoolManager Instance { get; private set; }
 
-    public void Awake()
+    private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
         Instance = this;
     }
 
@@ -19,7 +26,6 @@ public class PoolManager : MonoBehaviour
         {
             WeaponData.BulletTypes.Player => playerBulletPool.GetBullet(),
             WeaponData.BulletTypes.Enemy => enemyBulletPool.GetBullet(),
-            _ => throw new ArgumentException($"Тип пули {type} не имеет назначенного пула!")
         };
     }
 }

@@ -1,23 +1,48 @@
 using ShopScripts;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BalanceUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI balanceText;
 
-    public void OnEnable()
+    private void OnEnable()
     {
-        WalletManager.Instance.OnBalanceChanged += UpdateBalance;
+        if (WalletManager.Instance != null)
+        {
+            WalletManager.Instance.OnBalanceChanged += UpdateBalance;
+            UpdateBalance(WalletManager.Instance.playerBalance);
+        }
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    public void OnDisable()
+    private void OnDisable()
     {
-        WalletManager.Instance.OnBalanceChanged -= UpdateBalance;
+        if (WalletManager.Instance != null)
+        {
+            WalletManager.Instance.OnBalanceChanged -= UpdateBalance;
+        }
+        
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (WalletManager.Instance != null)
+        {
+            WalletManager.Instance.OnBalanceChanged -= UpdateBalance;
+            WalletManager.Instance.OnBalanceChanged += UpdateBalance;
+            UpdateBalance(WalletManager.Instance.playerBalance);
+        }
     }
 
     public void UpdateBalance(float money)
     {
-        balanceText.text = money.ToString("N0");
+        if (balanceText != null)
+        {
+            balanceText.text = money.ToString("N0");
+        }
     }
 }

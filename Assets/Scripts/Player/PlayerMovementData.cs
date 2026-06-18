@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
-[CreateAssetMenu(fileName = "MovementData", menuName = "Capcom/Player/Movement Data")]
+[CreateAssetMenu(fileName = "MovementData", menuName = "Player")]
 public class PlayerMovementData : ScriptableObject
 {
-    [Header("Walking Settings")] public float walkSpeed = 4f;
+    [FormerlySerializedAs("WalkSpeed")] [Header("Walking Settings")] public float walkSpeed = 4f;
 
     public float acceleration = 10f;
     public float deceleration = 12f;

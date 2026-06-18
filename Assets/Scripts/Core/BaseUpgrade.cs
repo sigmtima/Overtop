@@ -1,3 +1,4 @@
+using Player;
 using UnityEngine;
 
 namespace Core
@@ -8,23 +9,25 @@ namespace Core
     {
         public int CurrentLevel;
         public UpgradeData UpgradeData { get; set; }
-        public float Price { get; set; }
+        public float price;
         public float PriceMultiplier { get; set; }
-        public float DamageMultiplier { get; set; }
+        public float upgradeMultiplier { get; set; }
+        
 
         public virtual void Initialize(UpgradeData upgradeData)
         {
             UpgradeData = upgradeData;
-            Price = UpgradeData.startPrice;
+            price = UpgradeData.startPrice;
             PriceMultiplier = UpgradeData.priceMultiplier;
-            DamageMultiplier = UpgradeData.statMultiplier;
+            upgradeMultiplier = UpgradeData.statMultiplier;
         }
 
-        public abstract void LevelUp(PlayerController playerController);
+        public abstract void LevelUp(PlayerData data);
 
         public virtual float CalculateNextPrice()
         {
-            var nextPrice = Price * PriceMultiplier;
+            var nextPrice = price * PriceMultiplier;
+            price = nextPrice;
 
             return nextPrice;
         }

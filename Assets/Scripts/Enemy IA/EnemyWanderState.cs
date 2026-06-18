@@ -1,10 +1,10 @@
 using UnityEngine;
 
-namespace EnemyAI
+namespace Enemy_AI
 {
     public class EnemyWanderState : BaseState<EnemyContext>
     {
-        private Vector2 _currentTarget;
+
         private readonly float _nextCheckUpdateInterval = 1f;
         private float _nextCheckUpdateTime;
         private float _nextWanderTime;
@@ -32,7 +32,7 @@ namespace EnemyAI
         {
             if (_nextCheckUpdateTime <= Time.time)
             {
-                Context.Controller.CheckPlayer();
+                Context.Controller.TryDetectPlayer();
                 _nextCheckUpdateTime = Time.time + _nextCheckUpdateInterval;
             }
 
@@ -49,8 +49,8 @@ namespace EnemyAI
                         .minPatrolRadius,
                     Context.Controller.Data
                         .maxPatrolRadius);
-            _currentTarget = target;
-            Context.Controller.agent.SetDestination(target);
+         
+            Context.Controller.MoveTo(target);
             _nextWanderTime = Time.time + Random.Range(Context.Controller.Data.minMoveInterval,
                 Context.Controller.Data.maxMoveInterval);
         }

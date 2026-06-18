@@ -1,9 +1,9 @@
-public interface IInteractable
-{
-    void Interact();
-}
 
 public interface ITakeDamage
 {
     void TakeDamage(float damage);
+}
+public interface IBulletProvider
+{
+    public void Release(Bullet bullet);
 }

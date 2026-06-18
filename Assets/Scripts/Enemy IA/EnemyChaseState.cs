@@ -1,10 +1,10 @@
 using UnityEngine;
 
-namespace EnemyAI
+namespace Enemy_AI
 {
     public class EnemyChaseState : BaseState<EnemyContext>
     {
-        private readonly float _nextPathUpdateInterval = 0.2f;
+        const float _nextPathUpdateInterval = 0.22f;
         private float _nextPathUpdateTime;
 
         public EnemyChaseState(EnemyContext context) : base(context)

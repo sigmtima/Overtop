@@ -10,7 +10,7 @@ public class UnlockCursor : MonoBehaviour
 
     public IEnumerator unlick()
     {
-        yield return new WaitForSeconds(5.5f);
+        yield return new WaitForSeconds(2f);
         // Делает курсор свободным
         Cursor.lockState = CursorLockMode.None;
 

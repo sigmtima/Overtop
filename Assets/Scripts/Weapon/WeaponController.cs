@@ -1,13 +1,13 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Weapon
 {
     public class WeaponController : MonoBehaviour
     {
-        [SerializeField] private BulletsPool bulletsPoolObject;
-
-        public WeaponData WeaponData;
+        [field: SerializeField] 
+        public WeaponData WeaponData { get; private set; }
         private int _currentAmmo;
         private bool _isReloading;
 
@@ -15,6 +15,12 @@ namespace Weapon
 
         public void Start()
         {
+            if (WeaponData == null)
+            {
+                Debug.LogError("WeaponData missing");
+                enabled = false;
+                return;
+            }
             _currentAmmo = WeaponData.magazineSize;
         }
 
@@ -28,16 +34,16 @@ namespace Weapon
 
             if (Time.time >= _nextAttackTime)
             {
-                var bullet = PoolManager.Instance.GetBullet(WeaponData.bulletType);
-
+                var bullet = PoolManager.Instance.GetBullet(WeaponData.BulletType);
+                
+                if (bullet == null) return;
+                
                 bullet.Setup(WeaponData.bulletDistance, WeaponData.damage, transform.position, direction,
                     WeaponData.bulletSpeed);
-
-                if (bullet.Rb != null)
-                {
+                
                     _currentAmmo--;
-                    _nextAttackTime = Time.time + WeaponData._attackCooldown;
-                }
+                    _nextAttackTime = Time.time + WeaponData.attackCooldown;
+                
             }
         }
 

@@ -1,14 +1,15 @@
 using Core;
+using Player;
 
 namespace ShopScripts
 {
     public class DamageUpgrade : BaseUpgrade
     {
-        public override void LevelUp(PlayerController playerController)
+        public override void LevelUp(PlayerData data)
         {
-            //playerController.weaponController.WeaponData.damage *= DamageMultiplier;
+            data.PlayerWeaponData.damage *= upgradeMultiplier;
             CurrentLevel++;
-            Price = CalculateNextPrice();
+            price = CalculateNextPrice();
         }
     }
 }

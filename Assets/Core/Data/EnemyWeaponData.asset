@@ -16,7 +16,7 @@ MonoBehaviour:
   <weaponPrefab>k__BackingField: {fileID: 0}
   <bulletPrefab>k__BackingField: {fileID: 3043303213196812411, guid: 077f2f724121e0f48b9b6fe21b731341, type: 3}
   <fireRate>k__BackingField: 5
-  <damage>k__BackingField: 2
+  damage: 2
   <bulletDistance>k__BackingField: 14
   <bulletSpeed>k__BackingField: 7
   <reloadTime>k__BackingField: 4

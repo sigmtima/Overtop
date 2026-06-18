@@ -7,6 +7,7 @@ public class CoinItem : BaseItem
 
     public override void Pickup()
     {
+        Debug.Log("Монета подобрана");
         WalletManager.Instance.AddMoney(coinData.value);
     }
 }

@@ -7,16 +7,16 @@ namespace ShopScripts
     {
         public static WalletManager Instance;
         public float playerBalance;
-
+        public event Action<float> OnBalanceChanged;
         private void Awake()
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-
-        public event Action<float> OnBalanceChanged;
 
         public void AddMoney(float amount)
         {
+            Debug.Log("Добавил денег: " + playerBalance);
             playerBalance += amount;
             OnBalanceChanged?.Invoke(playerBalance);
         }

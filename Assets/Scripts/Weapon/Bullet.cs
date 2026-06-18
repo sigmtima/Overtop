@@ -3,9 +3,6 @@ using Weapon;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private BulletsPool bulletsPoolObject;
-    [SerializeField] private GameObject weapon;
-
     [field: SerializeField] public Rigidbody2D Rb { get; private set; }
     private float _damage;
     private float _maxDistance;
@@ -22,6 +19,11 @@ public class Bullet : MonoBehaviour
     {
         var traveledSqr = ((Vector2)transform.position - _spawnPoint).sqrMagnitude;
         if (traveledSqr >= _maxDistance * _maxDistance) _provider.Release(this);
+        if (_provider == null)
+        {
+            Debug.LogError("Bullet provider missing");
+            return;
+        }
     }
 
     private void OnEnable()
@@ -37,8 +39,12 @@ public class Bullet : MonoBehaviour
     {
         var interactable = other.GetComponentInParent<ITakeDamage>();
 
-        Debug.Log("OnTriggerEnter2D");
-
+        if (_provider == null)
+        {
+            Debug.LogError("Bullet provider missing");
+            return;
+        }
+        
         if (interactable != null) interactable.TakeDamage(_damage);
 
         _provider.Release(this);
