@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc0e17a2faabc14daf3c34267317c2a, type: 3}
+  m_Name: StartEnemyWeaponData
+  m_EditorClassIdentifier: Assembly-CSharp::Weapon.WeaponData
+  <BulletType>k__BackingField: 1
+  <weaponPrefab>k__BackingField: {fileID: 0}
+  <bulletPrefab>k__BackingField: {fileID: 3043303213196812411, guid: 077f2f724121e0f48b9b6fe21b731341, type: 3}
+  damage: 8
+  <bulletDistance>k__BackingField: 14
+  <bulletSpeed>k__BackingField: 7
+  <reloadTime>k__BackingField: 4
+  <magazineSize>k__BackingField: 40
+  <attackCooldown>k__BackingField: 1.1

@@ -22,4 +22,5 @@ Recording/
 *.opendb
 *.IDB
 *.LIST
-*Game
+Game/
+.idea/
