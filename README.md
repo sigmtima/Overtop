@@ -75,7 +75,7 @@ All core game files are isolated from third-party plugins and are located in the
 2. Extract the archive and launch the `[Game_Name].exe` file.
 
 ### For Developers (In Unity Editor):
-1. Clone the repository: `Clone the repository: [git clone https://github.com](https://github.com)`
+1. Clone the repository: `Clone the repository: git clone https://github.com/sigmtima/Overtop`
 2. Open Unity Hub and add the project from the folder.
 3. Make sure you are using Unity version **[6000.3.7f1]**.
 4. Open the `_Project/Scenes/[MainMenu]` scene and press **Play**.
